@@ -1,1 +1,9 @@
 /* Sass Mixins */
+
+//Define the website's breakpoints
+@mixin viewport-desktop {
+  @media (min-width: 728px) {
+    @content;
+  }
+}
+
