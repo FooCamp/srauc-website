@@ -1,7 +1,8 @@
 // Component imports
-import { defaultComp } from './components/default';
+import { defaultComp } from "./components/default";
+import { headerSection } from "./components/header";
 
-import { pageData } from '../data/data';
+import { pageData } from "../data/data";
 
 /**
  * Component map
@@ -9,18 +10,19 @@ import { pageData } from '../data/data';
  */
 const components = {
   default: defaultComp,
+  header: headerSection,
 };
 
 const getCurrentPage = () => {
-  const path = window.location.href.split('/');
-  const location = path.slice(-1)[0] || 'home';
-  return location.replace('.html', '');
+  const path = window.location.href.split("/");
+  const location = path.slice(-1)[0] || "home";
+  return location.replace(".html", "");
 };
 
 /**
  * Find and return the microPage initial wrapper
  */
-const getPageWrapper = () => document.querySelector('#root');
+const getPageWrapper = () => document.querySelector("#root");
 
 /**
  *
@@ -34,16 +36,19 @@ const pageInit = (data) => {
       if (components[section.component]) {
         pageWrapper.appendChild(components[section.component](section));
         // eslint-disable-next-line no-console
-        console.log(section.component, ' loaded!');
+        console.log(section.component, " loaded!");
       } else {
         pageWrapper.appendChild(components.default(section));
         // eslint-disable-next-line no-console
-        console.log(section.component, ' not found, loading default component!');
+        console.log(
+          section.component,
+          " not found, loading default component!"
+        );
       }
     });
   } else {
     // eslint-disable-next-line no-console
-    console.log('NO PAGE WRAPPER FOUND, PAGE CANT BE RENDERED');
+    console.log("NO PAGE WRAPPER FOUND, PAGE CANT BE RENDERED");
   }
 };
 

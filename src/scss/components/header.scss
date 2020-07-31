@@ -1,0 +1,14 @@
+.header {
+  box-shadow: 0 2px 4px 0 rgba($black, 0.06);
+  &__container {
+    padding: 16px 20px;
+  }
+  &__link {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 154px;
+  }
+  &__logo {
+  }
+}
