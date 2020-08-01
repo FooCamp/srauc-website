@@ -15,14 +15,19 @@ const pageData = {
           href: 'Register'
         }
       },
+      {
+        component: 'page-title',
+        eyebrow: 'Iniciativa',
+        heading: 'Iniciativa'
+      },
     ],
   },
   iniciativa: {
     sections: [
       {
-        name: 'headerTitleComp',
-        title: 'Iniciativa',
-        header: 'Iniciativa'
+        component: 'page-title',
+        eyebrow: 'Iniciativa',
+        heading: 'Iniciativa'
       },
       {
         name: 'textBlockComp',
@@ -78,9 +83,9 @@ const pageData = {
   contexto: {
     sections: [
       {
-        name: 'headerTitleComp',
-        title: 'Contexto',
-        header: 'El ACU'
+        component: 'page-title',
+        eyebrow: 'Contexto',
+        heading: 'El ACU'
       },
       {
         name: 'textBlockComp',
@@ -157,9 +162,9 @@ const pageData = {
   nosotros: {
     sections: [
       {
-        name: 'headerTitleComp',
-        title: 'Nosotros',
-        header: 'SRAUC'
+        component: 'page-title',
+        eyebrow: 'Nosotros',
+        heading: 'SRAUC'
       },
       {
         name: 'textBlockComp',
