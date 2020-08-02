@@ -1,10 +1,10 @@
 import { createElement } from '../helpers/helpers';
 
 const headerSection = (data) => {
-  const header = createElement('header', 'header');
-  const headerContainer = createElement('div', 'header__container');
-  const headerLink = createElement('a', 'header__link');
-  const logo = createElement('img', 'header__logo');
+  const header = createElement('HEADER', 'header');
+  const headerContainer = createElement('DIV', 'header__container');
+  const headerLink = createElement('A', 'header__link');
+  const logo = createElement('IMG', 'header__logo');
 
   logo.src = data.image.src;
   logo.alt = data.image.alt;

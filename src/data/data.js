@@ -57,7 +57,7 @@ const pageData = {
         index: 0,
         title: 'Deja enfriar el aceite',
         text: 'Con esto evitamos posibles quemaduras o derretir el embase.',
-        icon: ',
+        icon: '',
       },
       {
         name: 'timelineItem',
@@ -65,18 +65,18 @@ const pageData = {
         title: 'Filtra el aceite',
         text:
           'Filtre o cuele el aceite para que no pasen restos de comida, y viértelo en un envase de plástico, que puede ser el mismo frasco donde viene el aceite, cierre bien con la tapa.',
-        icon: ',
+        icon: '',
       },
       {
         name: 'warningComp',
         title: 'Evita mezclar el aceite usado con agua.',
-        icon: ',
+        icon: '',
       },
       {
         name: 'timelineItem',
         index: 2,
         title: 'Trae el aceite',
-        icon: ',
+        icon: '',
       },
       {
         name: 'mapComp',
@@ -111,21 +111,21 @@ const pageData = {
         title: 'Lo tiran por el desagüe',
         text:
           'Contaminando ríos y depósitos de agua, creando focos de hongos y bacterías.',
-        image: ',
+        image: '',
       },
       {
         name: 'percentTimelineItem',
         percent: '20%',
         title: 'Lo tiran a la basura',
         text: 'Filtrándose en suelos, poniendo en riesgo la vida al rededor.',
-        image: ',
+        image: '',
       },
       {
         name: 'percentTimelineItem',
         percent: '7%',
         title: 'Lo reutiliza',
         text: 'Poniendo en riesgo la salud propia.',
-        image: ',
+        image: '',
       },
       {
         name: 'scaledText',
@@ -137,7 +137,7 @@ const pageData = {
         title: 'Lo recicla',
         text:
           'Permitiendo que tengan un nuevo uso que además cuida el medio ambiente.',
-        image: ',
+        image: '',
         jarFlag: true,
       },
       {
@@ -146,24 +146,24 @@ const pageData = {
         items: [
           {
             image: {
-              src: ',
-              alt: ',
+              src: '',
+              alt: '',
             },
-            text: ',
+            text: '',
           },
           {
             image: {
-              src: ',
-              alt: ',
+              src: '',
+              alt: '',
             },
-            text: ',
+            text: '',
           },
           {
             image: {
-              src: ',
-              alt: ',
+              src: '',
+              alt: '',
             },
-            text: ',
+            text: '',
           },
         ],
       },
@@ -188,24 +188,24 @@ const pageData = {
         members: [
           {
             image: {
-              src: ',
-              alt: ',
+              src: '',
+              alt: '',
             },
             name: 'Gloria Correa Silva',
             job: 'Docente',
           },
           {
             image: {
-              src: ',
-              alt: ',
+              src: '',
+              alt: '',
             },
             name: 'Verónica Granados',
             job: 'Estudiante',
           },
           {
             image: {
-              src: ',
-              alt: ',
+              src: '',
+              alt: '',
             },
             name: 'Juan Pablo Cobos',
             job: 'Estudiante',
@@ -217,44 +217,44 @@ const pageData = {
         title: 'Galeria',
         pictures: [
           {
-            src: ',
-            alt: ',
+            src: '',
+            alt: '',
           },
           {
-            src: ',
-            alt: ',
+            src: '',
+            alt: '',
           },
           {
-            src: ',
-            alt: ',
+            src: '',
+            alt: '',
           },
           {
-            src: ',
-            alt: ',
+            src: '',
+            alt: '',
           },
           {
-            src: ',
-            alt: ',
+            src: '',
+            alt: '',
           },
           {
-            src: ',
-            alt: ',
+            src: '',
+            alt: '',
           },
           {
-            src: ',
-            alt: ',
+            src: '',
+            alt: '',
           },
           {
-            src: ',
-            alt: ',
+            src: '',
+            alt: '',
           },
           {
-            src: ',
-            alt: ',
+            src: '',
+            alt: '',
           },
           {
-            src: ',
-            alt: ',
+            src: '',
+            alt: '',
           },
         ],
       },
