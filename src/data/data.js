@@ -20,35 +20,35 @@ const pageData = {
   iniciativa: {
     sections: [
       {
-        name: 'headerTitleComp',
+        component: 'headerTitleComp',
         title: 'Iniciativa',
         header: 'Iniciativa'
       },
       {
-        name: 'textBlockComp',
+        component: 'textBlockComp',
         backgroundColor: 'white',
         title: '¿Sabías que 1 litro de aceite contamina más de 1000 litros de agua?',
         text:
           'Hemos ideado una manera de deshacernos del aceite de manera responsable con el medio ambiente.'
       },
       {
-        name: 'textBlockComp',
+        component: 'textBlockComp',
         backgroundColor: 'green',
         title: '¿Sabías que 1 litro de aceite contamina más de 1000 litros de agua?'
       },
       {
-        name: 'timelineHeader',
+        component: 'timelineHeader',
         title: 'Como recoger el aceite'
       },
       {
-        name: 'timelineItem',
+        component: 'timelineItem',
         index: 0,
         title: 'Deja enfriar el aceite',
         text: 'Con esto evitamos posibles quemaduras o derretir el embase.',
         icon: ''
       },
       {
-        name: 'timelineItem',
+        component: 'timelineItem',
         index: 1,
         title: 'Filtra el aceite',
         text:
@@ -56,18 +56,18 @@ const pageData = {
         icon: ''
       },
       {
-        name: 'warningComp',
+        component: 'warningComp',
         title: 'Evita mezclar el aceite usado con agua.',
         icon: ''
       },
       {
-        name: 'timelineItem',
+        component: 'timelineItem',
         index: 2,
         title: 'Trae el aceite',
         icon: ''
       },
       {
-        name: 'mapComp',
+        component: 'mapComp',
         title: 'Institución Educativa República de Uruguay',
         text1: 'Calle 91a No 70a-193 Barrio Alfonso López Medellín',
         text2: 'Aula 2 -204 (bloque 2)',
@@ -78,47 +78,47 @@ const pageData = {
   contexto: {
     sections: [
       {
-        name: 'headerTitleComp',
+        component: 'headerTitleComp',
         title: 'Contexto',
         header: 'El ACU'
       },
       {
-        name: 'textBlockComp',
+        component: 'textBlockComp',
         backgroundColor: 'white',
         text:
           'En todos los hogares se preparan alimentos y en la elaboración de muchos de ellos se emplea el aceite vegetal o animal. Luego de ser usado se conoce como ACU; Aceite de Cocina Usado. Este producto al ser utilizado varias veces, llega un momento en que se quema y es desechado muchas veces de manera incorrecta. Lo que contamina el medio ambiente, tanto suelos como aguas.'
       },
       {
-        name: 'percentTimelineHeader',
+        component: 'percentTimelineHeader',
         title: 'Según nuestro estudio:'
       },
       {
-        name: 'percentTimelineItem',
+        component: 'percentTimelineItem',
         percent: '30%',
         title: 'Lo tiran por el desagüe',
         text: 'Contaminando ríos y depósitos de agua, creando focos de hongos y bacterías.',
         image: ''
       },
       {
-        name: 'percentTimelineItem',
+        component: 'percentTimelineItem',
         percent: '20%',
         title: 'Lo tiran a la basura',
         text: 'Filtrándose en suelos, poniendo en riesgo la vida al rededor.',
         image: ''
       },
       {
-        name: 'percentTimelineItem',
+        component: 'percentTimelineItem',
         percent: '7%',
         title: 'Lo reutiliza',
         text: 'Poniendo en riesgo la salud propia.',
         image: ''
       },
       {
-        name: 'scaledText',
+        component: 'scaledText',
         text: '¡Lo mejor es lo que hace la mayoría!'
       },
       {
-        name: 'percentTimelineItem',
+        component: 'percentTimelineItem',
         percent: '35%',
         title: 'Lo recicla',
         text: 'Permitiendo que tengan un nuevo uso que además cuida el medio ambiente.',
@@ -126,7 +126,7 @@ const pageData = {
         jarFlag: true
       },
       {
-        name: 'carouselComp',
+        component: 'carouselComp',
         title: 'El aceite se convierte en:',
         items: [
           {
@@ -157,18 +157,18 @@ const pageData = {
   nosotros: {
     sections: [
       {
-        name: 'headerTitleComp',
+        component: 'headerTitleComp',
         title: 'Nosotros',
         header: 'SRAUC'
       },
       {
-        name: 'textBlockComp',
+        component: 'textBlockComp',
         backgroundColor: 'white',
         text:
           'En todos los hogares se preparan alimentos y en la elaboración de muchos de ellos se emplea el aceite vegetal o animal. Luego de ser usado se conoce como ACU; Aceite de Cocina Usado. Este producto al ser utilizado varias veces, llega un momento en que se quema y es desechado muchas veces de manera incorrecta. Lo que contamina el medio ambiente, tanto suelos como aguas.'
       },
       {
-        name: 'teamMembersComp',
+        component: 'teamMembersComp',
         title: 'Integrantes',
         members: [
           {
@@ -198,7 +198,7 @@ const pageData = {
         ]
       },
       {
-        name: 'galleryComp',
+        component: 'galleryComp',
         title: 'Galeria',
         pictures: [
           {

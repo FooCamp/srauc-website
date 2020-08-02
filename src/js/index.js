@@ -1,5 +1,7 @@
 // Component imports
-import { defaultComp } from './components/default';
+import { defaultComp } from './components/default.js';
+import { initialMessageComp } from './components/initialmessage';
+
 
 import { pageData } from '../data/data';
 
@@ -9,6 +11,7 @@ import { pageData } from '../data/data';
  */
 const components = {
   default: defaultComp,
+  textBlockComp: initialMessageComp
 };
 
 const getCurrentPage = () => {
