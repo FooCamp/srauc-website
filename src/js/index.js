@@ -16,7 +16,7 @@ const components = {
 const getCurrentPage = () => {
   const path = window.location.href.split('/');
   const location = path.slice(-1)[0] || 'home';
-  return location.replace('.html', ');
+  return location.replace('.html', '');
 };
 
 /**
