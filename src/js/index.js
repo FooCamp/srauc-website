@@ -1,6 +1,6 @@
 // Component imports
 import { defaultComp } from './components/default.js';
-import { initialMessageComp } from './components/initialmessage';
+import { initialMessageComp } from './components/initialMessage';
 
 
 import { pageData } from '../data/data';

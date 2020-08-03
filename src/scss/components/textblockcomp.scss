@@ -1,4 +1,4 @@
-.textblockcomp {
+.text-block-comp {
     &__container{
         @extend .grid;
         grid-template-rows: [row1-start] 50px [row1-end] auto [third-line] 50px [third-end] auto [fourth-start] 50px [fourth-end];
