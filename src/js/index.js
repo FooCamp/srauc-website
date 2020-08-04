@@ -1,6 +1,6 @@
 // Component imports
-import { defaultComp } from './components/default';
-
+import defaultComp from './components/default';
+import mainNavigation from './components/navigation';
 import { pageData } from '../data/data';
 
 /**
@@ -9,6 +9,7 @@ import { pageData } from '../data/data';
  */
 const components = {
   default: defaultComp,
+  navigation: mainNavigation,
 };
 
 const getCurrentPage = () => {
@@ -28,7 +29,7 @@ const getPageWrapper = () => document.querySelector('#root');
  */
 const pageInit = (data) => {
   const pageWrapper = getPageWrapper();
-
+  // TODO : Don't do appendChild in every forEach loop
   if (pageWrapper) {
     data.sections.forEach((section) => {
       if (components[section.component]) {
