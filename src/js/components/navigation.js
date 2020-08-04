@@ -40,11 +40,20 @@ const mainNavigation = (data) => {
   const menuWrapper = newContainer('div', [menuButton, navOverlay], ['nav']);
 
   // Listeners
+  let pagePositionTop = 0;
+
   menuButton.addEventListener('click', () => {
+    pagePositionTop = window.pageYOffset || document.documentElement.scrollTop;
+    const bodyPage = document.body;
+    bodyPage.classList.add('lock-scroll');
+    bodyPage.style.top = `${pagePositionTop}px`;
     navOverlay.classList.add('nav__overlay--active');
   });
 
   iconCloseButton.addEventListener('click', () => {
+    const bodyPage = document.body;
+    bodyPage.classList.remove('lock-scroll');
+    window.scroll(0, pagePositionTop);
     navOverlay.classList.remove('nav__overlay--active');
   });
 
