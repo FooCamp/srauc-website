@@ -41,9 +41,19 @@ const pageData = {
         ],
       },
       {
+        component: 'header',
+        image: {
+          src: 'logo-srauc.svg',
+          alt: 'SRAUC LOGO',
+        },
+        item: {
+          href: '#',
+        },
+      },
+      {
         component: 'hero',
         image: {
-          src: '',
+          src: 'logo.jpeg',
           alt: 'SRAUC',
         },
         title: 'Listo para cuidar el ambiente?',

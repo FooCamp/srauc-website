@@ -1,6 +1,7 @@
 // Component imports
 import defaultComp from './components/default';
 import mainNavigation from './components/navigation';
+import { headerSection } from './components/header';
 import { pageData } from '../data/data';
 
 /**
@@ -10,6 +11,7 @@ import { pageData } from '../data/data';
 const components = {
   default: defaultComp,
   navigation: mainNavigation,
+  header: headerSection,
 };
 
 const getCurrentPage = () => {
