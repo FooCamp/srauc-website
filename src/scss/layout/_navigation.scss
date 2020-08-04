@@ -47,8 +47,6 @@
     }
 
     &-link {
-      @extend .heading;
-      @extend .heading-3;
       background: white;
       border-radius: 39px;
       color: $blue-grey-dark;

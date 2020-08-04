@@ -2,7 +2,7 @@ import { newLink, newContainer } from './helpers';
 
 const createLinks = (dataItems) => {
   const arrayLinks = dataItems.map((item) => {
-    const menuLink = newLink(item.href, item.text, ['nav__menu-link']);
+    const menuLink = newLink(item.href, item.text, ['heading', 'heading-3', 'nav__menu-link']);
     const menuItem = newContainer('li', [menuLink], ['nav__menu-item']);
     return menuItem;
   });
