@@ -1,0 +1,27 @@
+.text-block-comp {
+    &__container{
+        @extend .grid;
+        grid-template-rows: [row1-start] 50px [row1-end] auto [third-line] 50px [third-end] auto [fourth-start] 50px [fourth-end];
+        background-color: $white;
+    }
+    &__title {
+        @extend .display;
+        @extend .display-2;
+        color: $blue-grey-dark;
+        grid-column-start: 2;
+        grid-column-end: 11;
+        grid-row: row1-end / third-line;
+        font-stretch: normal;
+        font-style: normal;
+    }
+    &__text {
+        @extend .text;
+        @extend .text-normal;
+        color: $blue-grey-dark;
+        grid-column-start: 2;
+        grid-column-end: 12;
+        grid-row: third-end / fourth-start;
+        font-stretch: normal;
+        font-style: normal;
+    }
+}
