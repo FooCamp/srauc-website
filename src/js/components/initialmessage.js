@@ -5,8 +5,6 @@
 const initialMessageComp = (data) => {
   const section = document.createElement('section');
   
-  if (data.backgroundColor) section.classList.add(`text-block-comp__container--${data.backgroundColor}`);
-  
   if (data.title){
     let title = document.createElement('h1');
     title.classList.add('text-block-comp__title');

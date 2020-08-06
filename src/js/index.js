@@ -1,7 +1,7 @@
 // Component imports
 import { defaultComp } from './components/default.js';
+import { headerSection } from './components/header';
 import { initialMessageComp } from './components/initialMessage';
-
 
 import { pageData } from '../data/data';
 
@@ -11,6 +11,7 @@ import { pageData } from '../data/data';
  */
 const components = {
   default: defaultComp,
+  header: headerSection,
   textBlockComp: initialMessageComp
 };
 
@@ -41,7 +42,10 @@ const pageInit = (data) => {
       } else {
         pageWrapper.appendChild(components.default(section));
         // eslint-disable-next-line no-console
-        console.log(section.component, ' not found, loading default component!');
+        console.log(
+          section.component,
+          ' not found, loading default component!'
+        );
       }
     });
   } else {
