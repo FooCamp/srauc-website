@@ -2,6 +2,7 @@
 import defaultComp from './components/default';
 import mainNavigation from './components/navigation';
 import { headerSection } from './components/header';
+import { initialMessageComp } from './components/initialMessage';
 import { pageData } from '../data/data';
 
 /**
@@ -12,6 +13,7 @@ const components = {
   default: defaultComp,
   navigation: mainNavigation,
   header: headerSection,
+  textBlockComp: initialMessageComp,
 };
 
 const getCurrentPage = () => {
