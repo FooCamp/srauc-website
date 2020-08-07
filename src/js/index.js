@@ -1,6 +1,9 @@
 // Component imports
 import { defaultComp } from './components/default';
 import { pageTitle } from './components/pageTitle';
+import { headerSection } from './components/header';
+import { initialMessageComp } from './components/initialMessage';
+
 import { pageData } from '../data/data';
 
 /**
@@ -10,6 +13,8 @@ import { pageData } from '../data/data';
 const components = {
   default: defaultComp,
   pageTitle: pageTitle,
+  header: headerSection,
+  textBlockComp: initialMessageComp
 };
 
 const getCurrentPage = () => {
@@ -39,7 +44,10 @@ const pageInit = (data) => {
       } else {
         pageWrapper.appendChild(components.default(section));
         // eslint-disable-next-line no-console
-        console.log(section.component, ' not found, loading default component!');
+        console.log(
+          section.component,
+          ' not found, loading default component!'
+        );
       }
     });
   } else {

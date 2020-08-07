@@ -2,18 +2,28 @@ const pageData = {
   home: {
     sections: [
       {
+        component: 'header',
+        image: {
+          src: 'logo-srauc.svg',
+          alt: 'SRAUC LOGO',
+        },
+        item: {
+          href: '#',
+        },
+      },
+      {
         component: 'hero',
         image: {
-          src: '',
-          alt: 'SRAUC'
+          src: 'logo.jpeg',
+          alt: 'SRAUC',
         },
         title: 'Listo para cuidar el ambiente?',
         text:
           'Promovemos la recolección del aceite usado de cocina, para que pueda ser utilizado nuevamente en una energía renovable.',
         button: {
           text: 'Registrate',
-          href: 'Register'
-        }
+          href: 'Register',
+        },
       },
       {
         component: 'pageTitle',
@@ -30,53 +40,56 @@ const pageData = {
         heading: 'Iniciativa'
       },
       {
-        name: 'textBlockComp',
+        component: 'textBlockComp',
         backgroundColor: 'white',
-        title: '¿Sabías que 1 litro de aceite contamina más de 1000 litros de agua?',
+        title:
+          '¿Sabías que 1 litro de aceite contamina más de 1000 litros de agua?',
         text:
-          'Hemos ideado una manera de deshacernos del aceite de manera responsable con el medio ambiente.'
+          'Hemos ideado una manera de deshacernos del aceite de manera responsable con el medio ambiente.',
       },
       {
-        name: 'textBlockComp',
+        component: 'textBlockComp',
         backgroundColor: 'green',
-        title: '¿Sabías que 1 litro de aceite contamina más de 1000 litros de agua?'
+        title:
+          '¿Sabías que 1 litro de aceite contamina más de 1000 litros de agua?',
       },
       {
-        name: 'timelineHeader',
+        component: 'timelineHeader',
         title: 'Como recoger el aceite'
       },
       {
-        name: 'timelineItem',
+        component: 'timelineItem',
         index: 0,
         title: 'Deja enfriar el aceite',
         text: 'Con esto evitamos posibles quemaduras o derretir el embase.',
-        icon: ''
+        icon: '',
       },
       {
-        name: 'timelineItem',
+        component: 'timelineItem',
         index: 1,
         title: 'Filtra el aceite',
         text:
           'Filtre o cuele el aceite para que no pasen restos de comida, y viértelo en un envase de plástico, que puede ser el mismo frasco donde viene el aceite, cierre bien con la tapa.',
-        icon: ''
+        icon: '',
       },
       {
-        name: 'warningComp',
+        component: 'warningComp',
         title: 'Evita mezclar el aceite usado con agua.',
-        icon: ''
+        icon: '',
       },
       {
-        name: 'timelineItem',
+        component: 'timelineItem',
         index: 2,
         title: 'Trae el aceite',
-        icon: ''
+        icon: '',
       },
       {
-        name: 'mapComp',
+        component: 'mapComp',
         title: 'Institución Educativa República de Uruguay',
         text1: 'Calle 91a No 70a-193 Barrio Alfonso López Medellín',
         text2: 'Aula 2 -204 (bloque 2)',
-        text3: 'O deposítalo en la caneca color naranja que se encuentra al ingreso de la Institución.'
+        text3:
+          'O deposítalo en la caneca color naranja que se encuentra al ingreso de la Institución.',
       },
     ],
   },
@@ -88,75 +101,77 @@ const pageData = {
         heading: 'El ACU'
       },
       {
-        name: 'textBlockComp',
+        component: 'textBlockComp',
         backgroundColor: 'white',
         text:
-          'En todos los hogares se preparan alimentos y en la elaboración de muchos de ellos se emplea el aceite vegetal o animal. Luego de ser usado se conoce como ACU; Aceite de Cocina Usado. Este producto al ser utilizado varias veces, llega un momento en que se quema y es desechado muchas veces de manera incorrecta. Lo que contamina el medio ambiente, tanto suelos como aguas.'
+          'En todos los hogares se preparan alimentos y en la elaboración de muchos de ellos se emplea el aceite vegetal o animal. Luego de ser usado se conoce como ACU; Aceite de Cocina Usado. Este producto al ser utilizado varias veces, llega un momento en que se quema y es desechado muchas veces de manera incorrecta. Lo que contamina el medio ambiente, tanto suelos como aguas.',
       },
       {
-        name: 'percentTimelineHeader',
+        component: 'percentTimelineHeader',
         title: 'Según nuestro estudio:'
       },
       {
-        name: 'percentTimelineItem',
+        component: 'percentTimelineItem',
         percent: '30%',
         title: 'Lo tiran por el desagüe',
-        text: 'Contaminando ríos y depósitos de agua, creando focos de hongos y bacterías.',
-        image: ''
+        text:
+          'Contaminando ríos y depósitos de agua, creando focos de hongos y bacterías.',
+        image: '',
       },
       {
-        name: 'percentTimelineItem',
+        component: 'percentTimelineItem',
         percent: '20%',
         title: 'Lo tiran a la basura',
         text: 'Filtrándose en suelos, poniendo en riesgo la vida al rededor.',
-        image: ''
+        image: '',
       },
       {
-        name: 'percentTimelineItem',
+        component: 'percentTimelineItem',
         percent: '7%',
         title: 'Lo reutiliza',
         text: 'Poniendo en riesgo la salud propia.',
-        image: ''
+        image: '',
       },
       {
-        name: 'scaledText',
+        component: 'scaledText',
         text: '¡Lo mejor es lo que hace la mayoría!'
       },
       {
-        name: 'percentTimelineItem',
+        component: 'percentTimelineItem',
         percent: '35%',
         title: 'Lo recicla',
-        text: 'Permitiendo que tengan un nuevo uso que además cuida el medio ambiente.',
+        text:
+          'Permitiendo que tengan un nuevo uso que además cuida el medio ambiente.',
         image: '',
-        jarFlag: true
+        jarFlag: true,
       },
       {
-        name: 'carouselComp',
+        component: 'carouselComp',
         title: 'El aceite se convierte en:',
         items: [
           {
             image: {
               src: '',
-              alt: ''
+              alt: '',
             },
-            text: ''
+            text: '',
           },
           {
             image: {
               src: '',
-              alt: ''
+              alt: '',
             },
-            text: ''
+            text: '',
           },
           {
             image: {
               src: '',
-              alt: ''
+              alt: '',
             },
-            text: ''
-          }
-        ]
-      }
+            text: '',
+          },
+        ],
+      },
     ],
   },
   nosotros: {
@@ -167,86 +182,86 @@ const pageData = {
         heading: 'SRAUC'
       },
       {
-        name: 'textBlockComp',
+        component: 'textBlockComp',
         backgroundColor: 'white',
         text:
-          'En todos los hogares se preparan alimentos y en la elaboración de muchos de ellos se emplea el aceite vegetal o animal. Luego de ser usado se conoce como ACU; Aceite de Cocina Usado. Este producto al ser utilizado varias veces, llega un momento en que se quema y es desechado muchas veces de manera incorrecta. Lo que contamina el medio ambiente, tanto suelos como aguas.'
+          'En todos los hogares se preparan alimentos y en la elaboración de muchos de ellos se emplea el aceite vegetal o animal. Luego de ser usado se conoce como ACU; Aceite de Cocina Usado. Este producto al ser utilizado varias veces, llega un momento en que se quema y es desechado muchas veces de manera incorrecta. Lo que contamina el medio ambiente, tanto suelos como aguas.',
       },
       {
-        name: 'teamMembersComp',
+        component: 'teamMembersComp',
         title: 'Integrantes',
         members: [
           {
             image: {
               src: '',
-              alt: ''
+              alt: '',
             },
             name: 'Gloria Correa Silva',
-            job: 'Docente'
+            job: 'Docente',
           },
           {
             image: {
               src: '',
-              alt: ''
+              alt: '',
             },
             name: 'Verónica Granados',
-            job: 'Estudiante'
+            job: 'Estudiante',
           },
           {
             image: {
               src: '',
-              alt: ''
+              alt: '',
             },
             name: 'Juan Pablo Cobos',
-            job: 'Estudiante'
-          }
-        ]
+            job: 'Estudiante',
+          },
+        ],
       },
       {
-        name: 'galleryComp',
+        component: 'galleryComp',
         title: 'Galeria',
         pictures: [
           {
             src: '',
-            alt: ''
+            alt: '',
           },
           {
             src: '',
-            alt: ''
+            alt: '',
           },
           {
             src: '',
-            alt: ''
+            alt: '',
           },
           {
             src: '',
-            alt: ''
+            alt: '',
           },
           {
             src: '',
-            alt: ''
+            alt: '',
           },
           {
             src: '',
-            alt: ''
+            alt: '',
           },
           {
             src: '',
-            alt: ''
+            alt: '',
           },
           {
             src: '',
-            alt: ''
+            alt: '',
           },
           {
             src: '',
-            alt: ''
+            alt: '',
           },
           {
             src: '',
-            alt: ''
+            alt: '',
           },
-        ]
+        ],
       },
     ],
   },
