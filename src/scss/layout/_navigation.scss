@@ -1,17 +1,13 @@
 .nav {
   &__button-menu {
-    background: transparent;
-    border: 0;
     border-radius: 39px;
     bottom: 20px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.11);
-    outline: 0;
     position: fixed;
     right: 20px;
     width: 60px;
-    z-index: 999;
 
-    & img {
+    img {
       display: block;
     }
   }
@@ -26,7 +22,6 @@
     position: fixed;
     transition: transform 0.15s linear;
     width: 100%;
-    z-index: 999;
 
     &--active {
       transform: translateY(-100%);
@@ -47,7 +42,7 @@
     }
 
     &-link {
-      background: white;
+      background: $white;
       border-radius: 39px;
       color: $blue-grey-dark;
       display: block;
@@ -57,11 +52,7 @@
   }
 
   &__button-close {
-    background: transparent;
-    border: 1px solid red;
-    border: 0;
     bottom: 20px;
-    outline: 0;
     position: absolute;
     right: 20px;
     width: 60px;

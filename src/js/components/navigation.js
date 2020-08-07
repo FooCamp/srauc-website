@@ -12,7 +12,7 @@ const createLinks = (dataItems) => {
 const mainNavigation = (data) => {
   // Create menu button
   const menuButton = document.createElement('button');
-  menuButton.classList.add('nav__button-menu');
+  menuButton.classList.add('button', 'nav__button-menu');
 
   // Create menu icon
   const menuIcon = document.createElement('img');
@@ -27,7 +27,7 @@ const mainNavigation = (data) => {
   iconClose.alt = 'Close menu button';
 
   const iconCloseButton = document.createElement('button');
-  iconCloseButton.classList.add('nav__button-close');
+  iconCloseButton.classList.add('button', 'nav__button-close');
 
   // Insert icons in buttons
   iconCloseButton.appendChild(iconClose);
