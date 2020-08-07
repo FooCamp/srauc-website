@@ -16,7 +16,7 @@ const pageData = {
         }
       },
       {
-        component: 'page-title',
+        component: 'pageTitle',
         eyebrow: 'Iniciativa',
         heading: 'Iniciativa'
       },
@@ -25,7 +25,7 @@ const pageData = {
   iniciativa: {
     sections: [
       {
-        component: 'page-title',
+        component: 'pageTitle',
         eyebrow: 'Iniciativa',
         heading: 'Iniciativa'
       },
@@ -83,7 +83,7 @@ const pageData = {
   contexto: {
     sections: [
       {
-        component: 'page-title',
+        component: 'pageTitle',
         eyebrow: 'Contexto',
         heading: 'El ACU'
       },
@@ -162,7 +162,7 @@ const pageData = {
   nosotros: {
     sections: [
       {
-        component: 'page-title',
+        component: 'pageTitle',
         eyebrow: 'Nosotros',
         heading: 'SRAUC'
       },

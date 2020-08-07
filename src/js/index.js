@@ -9,7 +9,7 @@ import { pageData } from '../data/data';
  */
 const components = {
   default: defaultComp,
-  'page-title': pageTitle,
+  pageTitle: pageTitle,
 };
 
 const getCurrentPage = () => {
