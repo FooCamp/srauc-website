@@ -12,3 +12,21 @@ video {
   width: 100%
 }
 
+//Buttons reset
+button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0;
+}
+
+//Style for default view to avoid overflow
+.default {
+  overflow: hidden;
+}
+
+// Class to lock the scroll of the page
+.lock-scroll {
+  position: fixed;
+}
+

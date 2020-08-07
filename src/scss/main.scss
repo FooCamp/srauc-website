@@ -10,6 +10,9 @@
 @import 'base/typography';
 @import 'base/grid';
 
-// 3. Styling components
+// 3. Layout
+@import 'layout/navigation';
+
+// 4. Components
 @import 'components/text-block-comp';
 @import 'components/header';

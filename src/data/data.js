@@ -1,6 +1,45 @@
+// TODO : organize data in folder structure
 const pageData = {
   home: {
     sections: [
+      {
+        component: 'navigation',
+        buttonMenu: {
+          image: {
+            src: 'icon-menu.svg',
+            alt: 'Menu Button',
+          },
+        },
+        items: [
+          {
+            text: 'Nosotros',
+            href: 'nosotros',
+          },
+          {
+            text: 'Contexto',
+            href: 'contexto',
+          },
+          {
+            text: 'Iniciativa',
+            href: 'iniciativa',
+          },
+          {
+            text: 'Registro',
+            href: 'registro',
+          },
+        ],
+        socialText: 'Encuentranos en nuestras redes sociales',
+        socialLinks: [
+          {
+            href: 'instagram.com',
+            icon: 'instagram',
+          },
+          {
+            href: 'facebook.com',
+            icon: 'facebook',
+          },
+        ],
+      },
       {
         component: 'header',
         image: {
@@ -37,16 +76,14 @@ const pageData = {
       {
         component: 'textBlockComp',
         backgroundColor: 'white',
-        title:
-          '¿Sabías que 1 litro de aceite contamina más de 1000 litros de agua?',
+        title: '¿Sabías que 1 litro de aceite contamina más de 1000 litros de agua?',
         text:
           'Hemos ideado una manera de deshacernos del aceite de manera responsable con el medio ambiente.',
       },
       {
         component: 'textBlockComp',
         backgroundColor: 'green',
-        title:
-          '¿Sabías que 1 litro de aceite contamina más de 1000 litros de agua?',
+        title: '¿Sabías que 1 litro de aceite contamina más de 1000 litros de agua?',
       },
       {
         component: 'timelineHeader',
@@ -109,8 +146,7 @@ const pageData = {
         component: 'percentTimelineItem',
         percent: '30%',
         title: 'Lo tiran por el desagüe',
-        text:
-          'Contaminando ríos y depósitos de agua, creando focos de hongos y bacterías.',
+        text: 'Contaminando ríos y depósitos de agua, creando focos de hongos y bacterías.',
         image: '',
       },
       {
@@ -135,8 +171,7 @@ const pageData = {
         component: 'percentTimelineItem',
         percent: '35%',
         title: 'Lo recicla',
-        text:
-          'Permitiendo que tengan un nuevo uso que además cuida el medio ambiente.',
+        text: 'Permitiendo que tengan un nuevo uso que además cuida el medio ambiente.',
         image: '',
         jarFlag: true,
       },

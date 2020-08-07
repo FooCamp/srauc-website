@@ -3,10 +3,11 @@
  * returns a default component to show the provided information.
  */
 const defaultComp = (data) => {
-  const section = document.createElement('SECTION');
+  // TODO : Use pre instead of section
+  const section = document.createElement('pre');
   section.classList.add('default');
-  section.textContent = JSON.stringify(data);
+  section.textContent = JSON.stringify(data, null, 2);
   return section;
 };
 
-export { defaultComp };
+export default defaultComp;
