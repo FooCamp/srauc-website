@@ -1,0 +1,33 @@
+.featured-message {
+    @extend .grid;
+    grid-template-rows: [row1-start] 50px [row1-end] auto [third-line] 50px [third-end];
+    background-color: $green;
+    &--warning{
+        background-color: $orange;
+        grid-template-rows: [row1-start] 26px [row1-end] auto [third-line] 18px [third-end] auto [fourth-start] 50px [fourth-end];
+    }
+    
+    &__title {
+        @extend .display;
+        @extend .display-2;
+        color: $white;
+        grid-column-start: 2;
+        grid-column-end: 11;
+        grid-row: row1-end / third-line;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: -2.21px;
+        &--warning{
+            color: $blue-grey-dark;
+            letter-spacing: normal;
+            grid-row: third-end / fourth-start;
+        }
+    }
+    &__icon {
+        width: 46px;
+        height: 46px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row: row1-end / third-line;
+    }
+}

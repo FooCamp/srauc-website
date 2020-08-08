@@ -111,8 +111,13 @@ const pageData = {
       },
       {
         component: 'warningComp',
-        title: 'Evita mezclar el aceite usado con agua.',
+        title: 'El aceite reciclado se convierte en energía limpia que contamina menos que el combustible fósil.',
         icon: '',
+      },
+      {
+        component: 'warningComp',
+        title: 'Evita mezclar el aceite usado con agua.',
+        icon: 'icono-aviso@3x.png',
       },
       {
         component: 'timelineItem',
