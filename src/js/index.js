@@ -1,9 +1,9 @@
 // Component imports
-import { defaultComp } from './components/default';
 import { pageTitle } from './components/pageTitle';
+import defaultComp from './components/default';
+import mainNavigation from './components/navigation';
 import { headerSection } from './components/header';
 import { initialMessageComp } from './components/initialMessage';
-
 import { pageData } from '../data/data';
 
 /**
@@ -13,8 +13,9 @@ import { pageData } from '../data/data';
 const components = {
   default: defaultComp,
   pageTitle: pageTitle,
+  navigation: mainNavigation,
   header: headerSection,
-  textBlockComp: initialMessageComp
+  textBlockComp: initialMessageComp,
 };
 
 const getCurrentPage = () => {
@@ -34,7 +35,7 @@ const getPageWrapper = () => document.querySelector('#root');
  */
 const pageInit = (data) => {
   const pageWrapper = getPageWrapper();
-
+  // TODO : Don't do appendChild in every forEach loop
   if (pageWrapper) {
     data.sections.forEach((section) => {
       if (components[section.component]) {
@@ -44,10 +45,7 @@ const pageInit = (data) => {
       } else {
         pageWrapper.appendChild(components.default(section));
         // eslint-disable-next-line no-console
-        console.log(
-          section.component,
-          ' not found, loading default component!'
-        );
+        console.log(section.component, ' not found, loading default component!');
       }
     });
   } else {
