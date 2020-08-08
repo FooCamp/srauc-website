@@ -3,54 +3,6 @@ const pageData = {
   home: {
     sections: [
       {
-        component: 'navigation',
-        buttonMenu: {
-          image: {
-            src: 'icon-menu.svg',
-            alt: 'Menu Button',
-          },
-        },
-        items: [
-          {
-            text: 'Nosotros',
-            href: 'nosotros',
-          },
-          {
-            text: 'Contexto',
-            href: 'contexto',
-          },
-          {
-            text: 'Iniciativa',
-            href: 'iniciativa',
-          },
-          {
-            text: 'Registro',
-            href: 'registro',
-          },
-        ],
-        socialText: 'Encuentranos en nuestras redes sociales',
-        socialLinks: [
-          {
-            href: 'instagram.com',
-            icon: 'instagram',
-          },
-          {
-            href: 'facebook.com',
-            icon: 'facebook',
-          },
-        ],
-      },
-      {
-        component: 'header',
-        image: {
-          src: 'logo-srauc.svg',
-          alt: 'SRAUC LOGO',
-        },
-        item: {
-          href: '#',
-        },
-      },
-      {
         component: 'hero',
         image: {
           src: 'logo.jpeg',
@@ -87,7 +39,7 @@ const pageData = {
       },
       {
         component: 'timelineHeader',
-        title: 'Como recoger el aceite'
+        title: 'Como recoger el aceite',
       },
       {
         component: 'timelineItem',
@@ -140,7 +92,7 @@ const pageData = {
       },
       {
         component: 'percentTimelineHeader',
-        title: 'Según nuestro estudio:'
+        title: 'Según nuestro estudio:',
       },
       {
         component: 'percentTimelineItem',
@@ -165,7 +117,7 @@ const pageData = {
       },
       {
         component: 'scaledText',
-        text: '¡Lo mejor es lo que hace la mayoría!'
+        text: '¡Lo mejor es lo que hace la mayoría!',
       },
       {
         component: 'percentTimelineItem',
@@ -295,46 +247,70 @@ const pageData = {
       },
     ],
   },
-  navigation: {
-    items: [
+  common: {
+    initalSections: [
       {
-        text: 'Nosotros',
-        href: 'nosotros',
+        component: 'navigation',
+        buttonMenu: {
+          image: {
+            src: 'icon-menu.svg',
+            alt: 'Menu Button',
+          },
+        },
+        items: [
+          {
+            text: 'Nosotros',
+            href: 'nosotros',
+          },
+          {
+            text: 'Contexto',
+            href: 'contexto',
+          },
+          {
+            text: 'Iniciativa',
+            href: 'iniciativa',
+          },
+          {
+            text: 'Registro',
+            href: 'registro',
+          },
+        ],
+        socialText: 'Encuentranos en nuestras redes sociales',
+        socialLinks: [
+          {
+            href: 'instagram.com',
+            icon: 'instagram',
+          },
+          {
+            href: 'facebook.com',
+            icon: 'facebook',
+          },
+        ],
       },
       {
-        text: 'Contexto',
-        href: 'contexto',
-      },
-      {
-        text: 'Iniciativa',
-        href: 'iniciativa',
-      },
-      {
-        text: 'Registro',
-        href: 'registro',
+        component: 'header',
+        image: {
+          src: 'logo-srauc.svg',
+          alt: 'SRAUC LOGO',
+        },
+        item: {
+          href: '#',
+        },
       },
     ],
-    socialText: 'Encuentranos en nuestras redes sociales',
-    socialLinks: [
+    finalSections: [
       {
-        href: 'instagram.com',
-        icon: 'instagram',
-      },
-      {
-        href: 'facebook.com',
-        icon: 'facebook',
-      },
-    ],
-  },
-  footer: {
-    title: 'SRAUC',
-    text: 'Contáctanos para más información.',
-    email: 'srauc@gmail.com',
-    phone: '301 418 4986',
-    socialLinks: [
-      {
-        href: 'facebook.com',
-        icon: 'facebook',
+        component: 'footer',
+        title: 'SRAUC',
+        text: 'Contáctanos para más información.',
+        email: 'srauc@gmail.com',
+        phone: '301 418 4986',
+        socialLinks: [
+          {
+            href: 'facebook.com',
+            icon: 'facebook',
+          },
+        ],
       },
     ],
   },
