@@ -1,4 +1,5 @@
 // Component imports
+import { pageTitle } from './components/pageTitle';
 import defaultComp from './components/default';
 import mainNavigation from './components/navigation';
 import { headerSection } from './components/header';
@@ -11,6 +12,7 @@ import { pageData } from '../data/data';
  */
 const components = {
   default: defaultComp,
+  pageTitle: pageTitle,
   navigation: mainNavigation,
   header: headerSection,
   textBlockComp: initialMessageComp,
