@@ -292,7 +292,10 @@ const pageData = {
     ],
   },
   footer: {
-    title: 'SRAUC',
+    title: {
+      text: 'SRAUC',
+      url: '/index.html',
+    },
     text: 'Contáctanos para más información.',
     email: 'srauc@gmail.com',
     phone: '301 418 4986',
