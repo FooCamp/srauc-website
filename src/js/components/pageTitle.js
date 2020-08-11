@@ -1,4 +1,4 @@
-const pageTitle = data => {
+const pageTitle = (data) => {
   const section = document.createElement('section');
   const eyebrow = document.createElement('p');
   const heading = document.createElement('h1');
@@ -13,6 +13,6 @@ const pageTitle = data => {
   section.appendChild(heading);
 
   return section;
-}
+};
 
 export { pageTitle };
