@@ -1,0 +1,60 @@
+.nav {
+  &__button-menu {
+    border-radius: 39px;
+    bottom: 20px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.11);
+    position: fixed;
+    right: 20px;
+    width: 60px;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__overlay {
+    background: $green-dark;
+    bottom: -100%;
+    display: block;
+    height: 100vh;
+    left: 0;
+    padding: 210px 20px 20px;
+    position: fixed;
+    transition: transform 0.15s linear;
+    width: 100%;
+
+    &--active {
+      transform: translateY(-100%);
+    }
+  }
+
+  &__menu {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+
+    &-item {
+      border-radius: 39px;
+
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+    }
+
+    &-link {
+      background: $white;
+      border-radius: 39px;
+      color: $blue-grey-dark;
+      display: block;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+
+  &__button-close {
+    bottom: 20px;
+    position: absolute;
+    right: 20px;
+    width: 60px;
+  }
+}

@@ -8,6 +8,12 @@
 // 2. Base stuff
 @import 'base/reset';
 @import 'base/typography';
+@import 'base/grid';
 
-// 3. component style
+// 3. Layout
+@import 'layout/navigation';
+
+// 4. Components
+@import 'components/text-block-comp';
 @import 'components/header';
+@import 'components/page-title';
