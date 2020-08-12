@@ -19,7 +19,7 @@ const pageData = {
       {
         component: 'pageTitle',
         eyebrow: 'Iniciativa',
-        heading: 'Iniciativa'
+        heading: 'Iniciativa',
       },
     ],
   },
@@ -28,7 +28,7 @@ const pageData = {
       {
         component: 'pageTitle',
         eyebrow: 'Iniciativa',
-        heading: 'Iniciativa'
+        heading: 'Iniciativa',
       },
       {
         component: 'textBlockComp',
@@ -87,7 +87,7 @@ const pageData = {
       {
         component: 'pageTitle',
         eyebrow: 'Contexto',
-        heading: 'El ACU'
+        heading: 'El ACU',
       },
       {
         component: 'textBlockComp',
@@ -166,7 +166,7 @@ const pageData = {
       {
         component: 'pageTitle',
         eyebrow: 'Nosotros',
-        heading: 'SRAUC'
+        heading: 'SRAUC',
       },
       {
         component: 'textBlockComp',

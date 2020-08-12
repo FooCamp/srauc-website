@@ -1,11 +1,9 @@
-
 //Grid Mobile
-.grid{
-  display: grid;
+.grid {
   column-gap: 5px;
+  display: grid;
   grid-template-columns: repeat(12, 1fr);
   max-width: 360px;
   width: 100%;
   //Grid Desktop (No defined yet)
 }
-
