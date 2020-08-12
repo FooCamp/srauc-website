@@ -1,34 +1,27 @@
-import { createElement } from '../helpers/helpers';
+import { newText, newContainer, newMultimedia } from './helpers';
 
 const footerSection = (data) => {
-  const footer = createElement('footer', 'footer');
-  const container = createElement('div', 'footer__container');
-  const tittleText = createElement('h2', 'footer__title');
-  const tittleLink = createElement('a', 'footer__title--link');
-  const containerInformation = createElement('div', 'footer__container--text');
-  const text = createElement('p', 'footer__text');
-  const email = createElement('p', 'footer__email');
-  const phone = createElement('p', 'footer__phone');
-  const socialLink = createElement('a', 'footer__link');
-  const socialIcon = createElement('img', 'footer__link--icon');
+  const text = newText('p', data.text, ['footer__text']);
+  const email = newText('p', data.email.text,  ['footer__email']);
+  const emailLabel = newText('span', data.email.label, ['footer__email-label']);
+  const emailContainer = newContainer('div', [emailLabel, email], []);
+  const phone = newText('p', data.phone.text, ['footer__phone']);
+  const phoneLabel = newText('span', data.phone.label, ['footer__phone-label']);
+  const phoneContainer = newContainer('div', [phoneLabel, phone], []);
+  const containerInformation = newContainer('div', [text, emailContainer, phoneContainer], ['footer__container--text']);
 
-  tittleText.innerText = data.footer.title.text;
-  tittleLink.href = data.footer.title.url;
-  text.innerText = data.footer.text;
-  email.innerText = data.footer.email;
-  phone.innerText = data.footer.phone;
-  socialLink.href = data.footer.socialLinks.href;
-  socialIcon.src = data.footer.socialLinks.icon;
+  const tittleText = newText('h2', data.title.text, ['footer__title']);
+  const tittleLink = newContainer('a', [tittleText], ['footer__title--link']);
+  tittleLink.href = data.title.url;
 
-  tittleLink.appendChild(tittleText);
-  containerInformation.appendChild(text);
-  containerInformation.appendChild(email);
-  containerInformation.appendChild(phone);
-  socialLink.appendChild(socialIcon);
-  container.appendChild(tittleText);
-  container.appendChild(containerInformation);
-  container.appendChild(socialLink);
-  footer.appendChild(container);
+  const socialIcon = newMultimedia('img', data.socialLinks[0].icon, data.socialLinks[0].alt, ['footer__link--icon']);
+  const socialLink = newContainer('a', [socialIcon], ['footer__link']);
+  socialLink.href = data.socialLinks[0].href;
+  socialLink.target = '_blank';
+
+  const container = newContainer('div', [tittleLink, containerInformation, socialLink], ['footer__container']);
+
+  const footer = newContainer('footer', [container], ['footer']);
 
   return footer;
 };
