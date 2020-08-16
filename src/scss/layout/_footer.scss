@@ -1,0 +1,43 @@
+.footer {
+  background-color: $green-dark;
+
+  &__container {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 34px 48px 32px;
+  }
+
+  &__title {
+    color: $white;
+  }
+
+  &__container-text {
+    width: 295px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0 35px 0;
+  }
+
+  &__container-email {
+    display: inline-flex;
+    margin: 9px 0;
+  }
+  &__email-label {
+    margin-right: 5px;
+  }
+
+  &__container-phone {
+    display: inline-flex;
+
+  }
+&__phone-label {
+  margin-right: 5px;
+}
+  &__link-icon {
+    width: 41px;
+    height: 41pxx;
+  }
+
+}

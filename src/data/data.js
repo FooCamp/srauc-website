@@ -313,11 +313,11 @@ const pageData = {
         text: 'Contáctanos para más información.',
         email: {
           label: 'Correo:',
-          text: 'srauc@gmail.com',
+          text: ' srauc@gmail.com',
         },
          phone: {
            label: 'Teléfono:',
-           text: '301 418 4986',
+           text: ' 301 418 4986',
         },
         socialLinks: [
           {
