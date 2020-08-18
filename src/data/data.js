@@ -315,15 +315,15 @@ const pageData = {
           label: 'Correo:',
           text: ' srauc@gmail.com',
         },
-         phone: {
-           label: 'Teléfono:',
-           text: ' 301 418 4986',
+        phone: {
+          label: 'Teléfono:',
+          text: ' 301 418 4986',
         },
         socialLinks: [
           {
             href: 'https://www.facebook.com',
             icon: 'facebook-logo.png',
-            alt: 'facebook'
+            alt: 'facebook',
           },
         ],
       },
