@@ -90,10 +90,16 @@ const pageData = {
         heading: 'El ACU'
       },
       {
-        component: 'textBlockComp',
+        component: 'introductionTextComp',
         backgroundColor: 'white',
-        text:
-          'En todos los hogares se preparan alimentos y en la elaboración de muchos de ellos se emplea el aceite vegetal o animal. Luego de ser usado se conoce como ACU; Aceite de Cocina Usado. Este producto al ser utilizado varias veces, llega un momento en que se quema y es desechado muchas veces de manera incorrecta. Lo que contamina el medio ambiente, tanto suelos como aguas.',
+        paragraphs:[
+          {
+            text: 'En todos los hogares se preparan alimentos y en la elaboración de muchos de ellos se emplea el aceite vegetal o animal. Luego de ser usado se conoce como ACU; Aceite de Cocina Usado.'
+          },
+          {
+            text: 'Este producto al ser utilizado varias veces, llega un momento en que se quema y es desechado muchas veces de manera incorrecta. Lo que contamina el medio ambiente, tanto suelos como aguas.'
+          }  
+        ]
       },
       {
         component: 'percentTimelineHeader',
