@@ -4,24 +4,23 @@
  */
 const initialMessageComp = (data) => {
   const section = document.createElement('section');
-  
-  if (data.title){
+
+  if (data.title) {
     let title = document.createElement('h1');
     title.classList.add('text-block-comp__title');
     title.textContent = data.title;
     section.appendChild(title);
   }
-  
-  if (data.text){
+
+  if (data.text) {
     let text = document.createElement('p');
     text.classList.add('text-block-comp__text');
     text.textContent = data.text;
     section.appendChild(text);
   }
-  
+
   section.classList.add('text-block-comp__container');
   return section;
 };
 
 export { initialMessageComp };
-
