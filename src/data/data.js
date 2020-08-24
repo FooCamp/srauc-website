@@ -13,7 +13,7 @@ const pageData = {
           'Promovemos la recolección del aceite usado de cocina, para que pueda ser utilizado nuevamente en una energía renovable.',
         button: {
           text: 'Registrate',
-          href: 'Register',
+          href: '/register.html',
         },
       },
       {
@@ -265,19 +265,19 @@ const pageData = {
         items: [
           {
             text: 'Nosotros',
-            href: 'nosotros',
+            href: '/nosotros.html',
           },
           {
             text: 'Contexto',
-            href: 'contexto',
+            href: '/contexto.html',
           },
           {
             text: 'Iniciativa',
-            href: 'iniciativa',
+            href: '/iniciativa.html',
           },
           {
             text: 'Registro',
-            href: 'registro',
+            href: '/registro.html',
           },
         ],
         socialText: 'Encuentranos en nuestras redes sociales',
