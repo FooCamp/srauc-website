@@ -1,6 +1,6 @@
 .nav {
   &__button-menu {
-    border-radius: 39px;
+    border-radius: 40px;
     bottom: 20px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.11);
     position: fixed;
@@ -18,13 +18,17 @@
     display: block;
     height: 100vh;
     left: 0;
+    overflow-y: scroll;
     padding: 210px 20px 20px;
     position: fixed;
-    transition: transform 0.15s linear;
+    transition: bottom 0.15s linear;
     width: 100%;
 
     &--active {
-      transform: translateY(-100%);
+      bottom: 0;
+      .nav__button-close {
+        display: block;
+      }
     }
   }
 
@@ -53,7 +57,8 @@
 
   &__button-close {
     bottom: 20px;
-    position: absolute;
+    position: fixed;
+    display: none;
     right: 20px;
     width: 60px;
   }
