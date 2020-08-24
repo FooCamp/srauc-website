@@ -181,7 +181,7 @@ const pageData = {
           {
             image: {
               src: '',
-              alt: '',
+              alt: 'foto',
             },
             name: 'Gloria Correa Silva',
             job: 'Docente',
@@ -189,7 +189,7 @@ const pageData = {
           {
             image: {
               src: '',
-              alt: '',
+              alt: 'foto',
             },
             name: 'Verónica Granados',
             job: 'Estudiante',
@@ -197,7 +197,7 @@ const pageData = {
           {
             image: {
               src: '',
-              alt: '',
+              alt: 'foto',
             },
             name: 'Juan Pablo Cobos',
             job: 'Estudiante',
