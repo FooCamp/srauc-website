@@ -255,7 +255,14 @@ const pageData = {
   common: {
     initalSections: [
       {
-        component: 'navigation',
+        component: 'header',
+        image: {
+          src: 'logo-srauc.svg',
+          alt: 'SRAUC LOGO',
+        },
+        item: {
+          href: '#',
+        },
         buttonMenu: {
           image: {
             src: 'icon-menu.svg',
@@ -280,27 +287,6 @@ const pageData = {
             href: 'registro',
           },
         ],
-        socialText: 'Encuentranos en nuestras redes sociales',
-        socialLinks: [
-          {
-            href: 'instagram.com',
-            icon: 'instagram',
-          },
-          {
-            href: 'facebook.com',
-            icon: 'facebook',
-          },
-        ],
-      },
-      {
-        component: 'header',
-        image: {
-          src: 'logo-srauc.svg',
-          alt: 'SRAUC LOGO',
-        },
-        item: {
-          href: '#',
-        },
       },
     ],
     finalSections: [
