@@ -1,5 +1,18 @@
 import { newText, newContainer, newMultimedia } from './helpers';
 
+const createLInks = (arraySocial) => {
+  const arrayLinks = arraySocial.map((link) => {
+    const socialIcon = newMultimedia('img', link.icon, link.alt, ['footer__link-icon']);
+    const socialLink = newContainer('a', [socialIcon], ['footer__link']);
+    const socialContainer = newContainer('div', [socialLink], ['footer__container-link']);
+    socialLink.href = link.href;
+    socialLink.target = '_blank';
+
+    return socialContainer
+  });
+  return arrayLinks
+};
+
 const footerSection = (data) => {
   const text = newText('p', data.text, ['footer__text']);
   const email = newText('p', data.email.text,  ['footer__email']);
@@ -14,14 +27,11 @@ const footerSection = (data) => {
   const tittleLink = newContainer('a', [tittleText], ['footer__title-link']);
   tittleLink.href = data.title.url;
 
-  const socialIcon = newMultimedia('img', data.socialLinks[0].icon, data.socialLinks[0].alt, ['footer__link-icon']);
-  const socialLink = newContainer('a', [socialIcon], ['footer__link']);
-  socialLink.href = data.socialLinks[0].href;
-  socialLink.target = '_blank';
+  const socialMultimedia = createLInks (data.socialLinks);
 
-  const container = newContainer('div', [tittleLink, containerInformation, socialLink], ['grid','footer__container']);
+  const container = newContainer('div', [tittleLink, containerInformation, ...socialMultimedia], ['footer__container']);
 
-  const footer = newContainer('footer', [container], ['footer']);
+  const footer = newContainer('footer', [container], ['grid', 'footer']);
 
   return footer;
 };

@@ -308,7 +308,7 @@ const pageData = {
         component: 'footer',
         title: {
           text: 'SRAUC',
-          url: '/index.html',
+          url: '/',
         },
         text: 'Contáctanos para más información.',
         email: {

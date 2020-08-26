@@ -1,11 +1,10 @@
 .footer {
   background-color: $green-dark;
+  max-width: 100%;
 
   &__container {
     color: $white;
-    display: flex;
-    flex-direction: column;
-    padding: 50px 34px 48px 32px;
+    grid-column: 2/12;
   }
 
   &__container-email {
@@ -18,10 +17,9 @@
   }
 
   &__container-text {
-    width: 295px;
-    height: 70px;
     display: flex;
     flex-direction: column;
+    height: 70px;
     margin: 25px 0 35px 0;
   }
 
@@ -30,16 +28,17 @@
   }
 
   &__link-icon {
-    width: 41px;
     height: 41pxx;
+    padding-bottom: 48px;
+    width: 41px;
   }
 
   &__phone-label {
-  margin-right: 5px;
+    margin-right: 5px;
   }
 
   &__title {
     color: $white;
+    padding-top: 50px;
   }
-
 }
