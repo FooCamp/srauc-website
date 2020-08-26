@@ -4,6 +4,7 @@ import defaultComp from './components/default';
 import mainNavigation from './components/navigation';
 import { headerSection } from './components/header';
 import { initialMessageComp } from './components/initialMessage';
+import { featuredMessageComp } from './components/featuredMessage';
 import { introText } from './components/introText';
 import { pageData } from '../data/data';
 
@@ -17,6 +18,7 @@ const components = {
   navigation: mainNavigation,
   header: headerSection,
   textBlockComp: initialMessageComp,
+  warningComp: featuredMessageComp,
   introductionTextComp: introText,
 };
 
