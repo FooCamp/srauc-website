@@ -2,7 +2,7 @@
 
 //Define the website's breakpoints
 @mixin viewport-desktop {
-  @media (min-width: 728px) {
+  @media (min-width: 960px) {
     @content;
   }
 }
