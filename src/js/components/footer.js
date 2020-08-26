@@ -1,6 +1,6 @@
 import { newText, newContainer, newMultimedia } from './helpers';
 
-const createLInks = (arraySocial) => {
+const createLinks = (arraySocial) => {
   const arrayLinks = arraySocial.map((link) => {
     const socialIcon = newMultimedia('img', link.icon, link.alt, ['footer__link-icon']);
     const socialLink = newContainer('a', [socialIcon], ['footer__link']);
@@ -27,7 +27,7 @@ const footerSection = (data) => {
   const tittleLink = newContainer('a', [tittleText], ['footer__title-link']);
   tittleLink.href = data.title.url;
 
-  const socialMultimedia = createLInks (data.socialLinks);
+  const socialMultimedia = createLinks(data.socialLinks);
 
   const container = newContainer('div', [tittleLink, containerInformation, ...socialMultimedia], ['footer__container']);
 
