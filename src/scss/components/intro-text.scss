@@ -1,0 +1,18 @@
+.intro-text {
+  @extend .grid;
+  background-color: $white;
+  grid-auto-flow: row;
+  margin-top: 50px;
+
+  &__paragraph {
+    @extend .text;
+    @extend .text-normal;
+    color: $blue-grey-dark;
+    font-stretch: normal;
+    font-style: normal;
+    grid-column-end: 12;
+    grid-column-start: 2;
+    grid-row: auto;
+    margin-bottom: 25px;
+  }
+}
