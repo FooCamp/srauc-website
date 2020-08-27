@@ -5,6 +5,8 @@ import mainNavigation from './components/navigation';
 import { headerSection } from './components/header';
 import { initialMessageComp } from './components/initialMessage';
 import { footerSection } from './components/footer';
+import { featuredMessageComp } from './components/featuredMessage';
+import { introText } from './components/introText';
 import { pageData } from '../data/data';
 
 /**
@@ -18,6 +20,8 @@ const components = {
   header: headerSection,
   textBlockComp: initialMessageComp,
   footer: footerSection,
+  warningComp: featuredMessageComp,
+  introductionTextComp: introText,
 };
 
 const getCurrentPage = () => {
