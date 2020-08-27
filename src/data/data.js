@@ -194,7 +194,7 @@ const pageData = {
         members: [
           {
             image: {
-              src: '',
+              src: 'https://place-hold.it/220x220/#d8d8d',
               alt: 'foto',
             },
             name: 'Gloria Correa Silva',
@@ -202,7 +202,7 @@ const pageData = {
           },
           {
             image: {
-              src: '',
+              src: 'https://place-hold.it/220x220/#d8d8d',
               alt: 'foto',
             },
             name: 'Verónica Granados',
@@ -210,7 +210,7 @@ const pageData = {
           },
           {
             image: {
-              src: '',
+              src: 'https://place-hold.it/220x220/#d8d8d',
               alt: 'foto',
             },
             name: 'Juan Pablo Cobos',
