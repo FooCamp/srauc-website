@@ -320,14 +320,24 @@ const pageData = {
     finalSections: [
       {
         component: 'footer',
-        title: 'SRAUC',
+        title: {
+          text: 'SRAUC',
+          url: '/',
+        },
         text: 'Contáctanos para más información.',
-        email: 'srauc@gmail.com',
-        phone: '301 418 4986',
+        email: {
+          label: 'Correo:',
+          text: ' srauc@gmail.com',
+        },
+        phone: {
+          label: 'Teléfono:',
+          text: ' 301 418 4986',
+        },
         socialLinks: [
           {
-            href: 'facebook.com',
-            icon: 'facebook',
+            href: 'https://www.facebook.com',
+            icon: 'facebook-logo.png',
+            alt: 'facebook',
           },
         ],
       },
