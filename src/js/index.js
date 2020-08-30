@@ -3,6 +3,9 @@ import { pageTitle } from './components/pageTitle';
 import defaultComp from './components/default';
 import { headerSection } from './components/header';
 import { initialMessageComp } from './components/initialMessage';
+import { footerSection } from './components/footer';
+import { featuredMessageComp } from './components/featuredMessage';
+import { introText } from './components/introText';
 import { pageData } from '../data/data';
 
 /**
@@ -14,6 +17,9 @@ const components = {
   pageTitle: pageTitle,
   header: headerSection,
   textBlockComp: initialMessageComp,
+  footer: footerSection,
+  warningComp: featuredMessageComp,
+  introductionTextComp: introText,
 };
 
 const getCurrentPage = () => {
