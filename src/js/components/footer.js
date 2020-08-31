@@ -1,4 +1,4 @@
-import { newText, newContainer, newMultimedia } from './helpers';
+import { newText, newContainer, newMultimedia } from '../helpers/helpers';
 
 const createLinks = (arraySocial) => {
   const arrayLinks = arraySocial.map((link) => {

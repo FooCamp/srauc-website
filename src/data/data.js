@@ -275,7 +275,7 @@ const pageData = {
           alt: 'SRAUC LOGO',
         },
         item: {
-          href: '#',
+          href: '/inicio',
         },
         buttonMenu: {
           image: {

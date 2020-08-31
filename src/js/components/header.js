@@ -9,6 +9,7 @@ const createLinks = (dataItems) => {
   return arrayLinks;
 };
 
+
 const headerSection = (data) => {
 
   //Create icon close
@@ -17,10 +18,10 @@ const headerSection = (data) => {
   iconClose.alt = "Close menu button";
 
   //Create icon close button
-  const CloseButton = createElement('button', 'header__button-close');
+  const closeButton = createElement('button', 'header__button-close');
 
   //Insert icon close in button
-  CloseButton.appendChild(iconClose);
+  closeButton.appendChild(iconClose);
 
   //Create links
   const headerMenuLinks = createLinks(data.items);
@@ -49,14 +50,14 @@ const headerSection = (data) => {
   menuIcon.alt = data.buttonMenu.image.alt;
 
   //Create button menu
-  const menuButton = createElement('button', 'header__menu');
+  const menuButton = createElement('button', 'header__menu-btn');
 
   // Insert icon menu in button
   menuButton.appendChild(menuIcon);
   console.log(menuButton);
 
   //Create header container
-  const headerContainer = newContainer('div', [menuButton, headerLogo, headerNav, CloseButton], ['header__container'])
+  const headerContainer = newContainer('div', [menuButton, headerLogo, headerNav, closeButton], ['header__container'])
 
   //Create header
   const header = createElement('header', 'header');
@@ -66,22 +67,22 @@ const headerSection = (data) => {
   console.log(header);
 
   // Listeners
-  // let pagePositionTop = 0;
+  let pagePositionTop = 0;
 
-  // menuButton.addEventListener('click', () => {
-  //   pagePositionTop = window.pageYOffset || document.documentElement.scrollTop;
-  //   const bodyPage = document.body;
-  //   bodyPage.classList.add('lock-scroll');
-  //   bodyPage.style.top = `${pagePositionTop}px`;
-  //   headerNav.classList.add('nav__overlay--active');
-  // });
+  menuButton.addEventListener('click', () => {
+    pagePositionTop = window.pageYOffset || document.documentElement.scrollTop;
+    const bodyPage = document.body;
+    bodyPage.classList.add('lock-scroll');
+    bodyPage.style.top = `${pagePositionTop}px`;
+    headerNav.classList.add('header__nav--active');
+  });
 
-  // iconCloseButton.addEventListener('click', () => {
-  //   const bodyPage = document.body;
-  //   bodyPage.classList.remove('lock-scroll');
-  //   window.scroll(0, pagePositionTop);
-  //   navOverlay.classList.remove('nav__overlay--active');
-  // });
+ closeButton.addEventListener('click', () => {
+    const bodyPage = document.body;
+    bodyPage.classList.remove('lock-scroll');
+    window.scroll(0, pagePositionTop);
+    headerNav.classList.remove('header__nav--active');
+  });
 
   return header;
 };

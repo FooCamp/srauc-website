@@ -13,13 +13,13 @@ import { pageData } from '../data/data';
  * each component name is mapped to its template.
  */
 const components = {
+  header: headerSection,
   default: defaultComp,
   pageTitle: pageTitle,
-  header: headerSection,
   textBlockComp: initialMessageComp,
-  footer: footerSection,
   warningComp: featuredMessageComp,
   introductionTextComp: introText,
+  footer: footerSection,
 };
 
 const getCurrentPage = () => {
@@ -77,3 +77,4 @@ const pageInit = (data, { initalSections, finalSections }) => {
 };
 
 pageInit(pageData[getCurrentPage()], pageData.common);
+
