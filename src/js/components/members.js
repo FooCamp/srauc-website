@@ -5,7 +5,7 @@ const createElementsMembers = (members) => {
     const membersText = newText('h3', member.name, ['heading', 'heading-3']);
     const membersProfession = newText('p', member.job, [
       'text',
-      'text-largue',
+      'text-large',
       'members__profession',
     ]);
     const containerPerson = newContainer(

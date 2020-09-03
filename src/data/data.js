@@ -195,7 +195,7 @@ const pageData = {
           {
             image: {
               src: 'https://place-hold.it/220x220/#d8d8d',
-              alt: 'foto',
+              alt: 'Foto de Gloria Correa Silva',
             },
             name: 'Gloria Correa Silva',
             job: 'Docente',
@@ -203,7 +203,7 @@ const pageData = {
           {
             image: {
               src: 'https://place-hold.it/220x220/#d8d8d',
-              alt: 'foto',
+              alt: 'Foto de Verónica Granados',
             },
             name: 'Verónica Granados',
             job: 'Estudiante',
@@ -211,7 +211,7 @@ const pageData = {
           {
             image: {
               src: 'https://place-hold.it/220x220/#d8d8d',
-              alt: 'foto',
+              alt: 'Foto de Juan Pablo Cobos',
             },
             name: 'Juan Pablo Cobos',
             job: 'Estudiante',
