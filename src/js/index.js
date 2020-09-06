@@ -4,6 +4,7 @@ import defaultComp from './components/default';
 import mainNavigation from './components/navigation';
 import { headerSection } from './components/header';
 import { initialMessageComp } from './components/initialMessage';
+import { membersSection } from './components/members';
 import { footerSection } from './components/footer';
 import { featuredMessageComp } from './components/featuredMessage';
 import { introText } from './components/introText';
@@ -19,6 +20,7 @@ const components = {
   navigation: mainNavigation,
   header: headerSection,
   textBlockComp: initialMessageComp,
+  teamMembersComp: membersSection,
   footer: footerSection,
   warningComp: featuredMessageComp,
   introductionTextComp: introText,

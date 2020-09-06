@@ -194,24 +194,24 @@ const pageData = {
         members: [
           {
             image: {
-              src: '',
-              alt: '',
+              src: 'https://place-hold.it/220x220/#d8d8d',
+              alt: 'Foto de Gloria Correa Silva',
             },
             name: 'Gloria Correa Silva',
             job: 'Docente',
           },
           {
             image: {
-              src: '',
-              alt: '',
+              src: 'https://place-hold.it/220x220/#d8d8d',
+              alt: 'Foto de Verónica Granados',
             },
             name: 'Verónica Granados',
             job: 'Estudiante',
           },
           {
             image: {
-              src: '',
-              alt: '',
+              src: 'https://place-hold.it/220x220/#d8d8d',
+              alt: 'Foto de Juan Pablo Cobos',
             },
             name: 'Juan Pablo Cobos',
             job: 'Estudiante',
