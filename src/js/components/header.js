@@ -54,7 +54,6 @@ const headerSection = (data) => {
 
   // Insert icon menu in button
   menuButton.appendChild(menuIcon);
-  console.log(menuButton);
 
   //Create header container
   const headerContainer = newContainer('div', [menuButton, headerLogo, headerNav, closeButton], ['header__container'])
@@ -63,8 +62,6 @@ const headerSection = (data) => {
   const header = createElement('header', 'header');
 
   header.appendChild(headerContainer);
-
-  console.log(header);
 
   // Listeners
   let pagePositionTop = 0;
