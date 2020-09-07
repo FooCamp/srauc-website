@@ -3,9 +3,13 @@
   column-gap: 5px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  max-width: 360px;
-  width: 100%;
-  //Grid Desktop (No defined yet)
+  padding: 0 3px;
+  @include viewport-desktop {
+    column-gap: 20px;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 6px;
+  }
 }
 
 .container {

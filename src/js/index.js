@@ -1,7 +1,6 @@
 // Component imports
 import { pageTitle } from './components/pageTitle';
 import defaultComp from './components/default';
-import mainNavigation from './components/navigation';
 import { headerSection } from './components/header';
 import { initialMessageComp } from './components/initialMessage';
 import { membersSection } from './components/members';
@@ -15,15 +14,14 @@ import { pageData } from '../data/data';
  * each component name is mapped to its template.
  */
 const components = {
+  header: headerSection,
   default: defaultComp,
   pageTitle: pageTitle,
-  navigation: mainNavigation,
-  header: headerSection,
   textBlockComp: initialMessageComp,
   teamMembersComp: membersSection,
-  footer: footerSection,
   warningComp: featuredMessageComp,
   introductionTextComp: introText,
+  footer: footerSection,
 };
 
 const getCurrentPage = () => {
@@ -81,3 +79,4 @@ const pageInit = (data, { initalSections, finalSections }) => {
 };
 
 pageInit(pageData[getCurrentPage()], pageData.common);
+

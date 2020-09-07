@@ -1,4 +1,4 @@
-import { newMultimedia, newContainer, newText } from './helpers';
+import { newMultimedia, newContainer, newText } from '../helpers/helpers';
 
 const createElementsMembers = (members) => {
   return members.map((member) => {

@@ -1,0 +1,129 @@
+.header {
+  @extend .box-shadow;
+  background: $white;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  @include viewport-desktop {
+    height: 119px;
+    overflow: hidden;
+  }
+  &__container {
+    @extend .grid;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    @include viewport-desktop {
+      display: grid;
+      padding-bottom: initial;
+      padding-top: initial;
+    }
+  }
+  &__menu-btn {
+    border-radius: 50%;
+    bottom: 20px;
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    width: 60px;
+    @include viewport-desktop {
+      display: none;
+    }
+  }
+  &__link {
+    width: 154px;
+    @include viewport-desktop {
+      align-self: center;
+      grid-column: 2 / 4;
+    }
+  }
+  &__logo {
+    display: block;
+  }
+  &__nav {
+    background: $green-dark;
+    bottom: 0;
+    height: calc(100vh - 90px);
+    left: 0;
+    overflow: scroll;
+    padding-top: 120px;
+    position: fixed;
+    transition: transform 0.15s linear;
+    transform: translateY(100%);
+    width: 100%;
+
+    &--active {
+      transform: translateY(0);
+      & + .header__button-close {
+        display: block;
+      }
+    }
+
+    @include viewport-desktop {
+      align-self: center;
+      background: transparent;
+      display: block;
+      grid-column: 5 / 12;
+      height: auto;
+      overflow: initial;
+      padding-top: initial;
+      position: initial;
+      transform: initial;
+    }
+  }
+  &__menu {
+    margin: 0 auto;
+    width: 200px;
+    @include viewport-desktop {
+      display: flex;
+      justify-content: space-between;
+      margin-left: -20px;
+      margin-right: -20px;
+      width: auto;
+    }
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: 14px;
+        @include viewport-desktop {
+          margin-bottom: initial;
+        }
+      }
+      @include viewport-desktop {
+        display: inline-block;
+      }
+    }
+    &-link {
+      color: $blue-grey-dark;
+      display: block;
+      background: $white;
+      border-radius: 50px;
+      color: $blue-grey-dark;
+      display: block;
+      padding: 20px;
+      text-align: center;
+      @include viewport-desktop {
+        border-radius: initial;
+        padding: 50px 24px;
+        &:hover {
+          background: $green;
+          color: $white;
+        }
+      }
+    }
+    &-link--active {
+      background: $green;
+      color: $white;
+    }
+  }
+  &__button-close {
+    bottom: 20px;
+    display: none;
+    position: fixed;
+    right: 20px;
+    width: 60px;
+    @include viewport-desktop {
+    }
+  }
+}
