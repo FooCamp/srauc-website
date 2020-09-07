@@ -3,6 +3,7 @@ import { pageTitle } from './components/pageTitle';
 import defaultComp from './components/default';
 import { headerSection } from './components/header';
 import { initialMessageComp } from './components/initialMessage';
+import { membersSection } from './components/members';
 import { footerSection } from './components/footer';
 import { featuredMessageComp } from './components/featuredMessage';
 import { introText } from './components/introText';
@@ -17,6 +18,7 @@ const components = {
   default: defaultComp,
   pageTitle: pageTitle,
   textBlockComp: initialMessageComp,
+  teamMembersComp: membersSection,
   warningComp: featuredMessageComp,
   introductionTextComp: introText,
   footer: footerSection,

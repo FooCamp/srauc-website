@@ -1,0 +1,29 @@
+.members {
+  margin-bottom: 70px;
+
+  &__container-person {
+    align-items: flex-end;
+    color: $blue-grey-dark;
+    display: inline-flex;
+    margin-bottom: 5px;
+  }
+
+  &__container-text {
+    width: 170px;
+  }
+
+  &__image {
+    height: 115px;
+    margin-right: 5px;
+    width: 115px;
+  }
+
+  &__profession {
+    margin-top: 8px;
+  }
+
+  &__title {
+    color: $blue-grey-dark;
+    margin-bottom: 50px;
+  }
+}
