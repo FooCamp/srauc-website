@@ -3,23 +3,18 @@ const pageData = {
   home: {
     sections: [
       {
-        component: 'hero',
+        component: 'callToAction',
         image: {
-          src: 'logo.jpeg',
+          src: 'contenedor.png',
           alt: 'SRAUC',
         },
-        title: 'Listo para cuidar el ambiente?',
+        title: '¿Listo para cuidar el ambiente?',
         text:
           'Promovemos la recolección del aceite usado de cocina, para que pueda ser utilizado nuevamente en una energía renovable.',
         button: {
           text: 'Registrate',
           href: '/registro',
         },
-      },
-      {
-        component: 'pageTitle',
-        eyebrow: 'Iniciativa',
-        heading: 'Iniciativa',
       },
     ],
   },
