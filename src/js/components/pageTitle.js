@@ -1,16 +1,10 @@
+import { newText, newContainer } from '../helpers/helpers';
+
 const pageTitle = (data) => {
-  const section = document.createElement('section');
-  const eyebrow = document.createElement('p');
-  const heading = document.createElement('h1');
-
-  section.classList.add('page-title');
-  eyebrow.innerText = data.eyebrow;
-  eyebrow.classList.add('text', 'text-normal', 'page-title__eyebrow');
-  heading.innerText = data.heading;
-  heading.classList.add('heading', 'heading-1', 'page-title__heading');
-
-  section.appendChild(eyebrow);
-  section.appendChild(heading);
+  const eyebrow = newText('p', data.eyebrow, ['text', 'text-normal', 'page-title__eyebrow']);
+  const heading = newText('h1', data.heading, ['heading', 'heading-1', 'page-title__heading']);
+  const wrapper = newContainer('div', [eyebrow, heading], ['container']);
+  const section = newContainer('section', [wrapper], ['page-title']);
 
   return section;
 };
