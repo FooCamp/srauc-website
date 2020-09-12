@@ -93,9 +93,6 @@
       margin-bottom: 7px;
 
       @include viewport-desktop {
-        // flex-basis: 111px;
-        // flex-grow: 1;
-        // flex-shrink: 0;
         width: calc(111 * 100% / 460);
         margin-bottom: initial;
       }
@@ -205,6 +202,3 @@
     transform: translateX(0%);
   }
 }
-
-// Gradient yellow
-// Icon
