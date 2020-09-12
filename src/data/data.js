@@ -271,7 +271,7 @@ const pageData = {
       {
         component: 'registerFormComp',
         headline: 'Regístrate',
-        subheadline: 'Nos pondremos<br class="form__break">encontacto contigo.',
+        subheadline: 'Nos pondremos<br class="form__break"> en contacto contigo.',
         fields: [
           {
             label: 'Nombre:',
