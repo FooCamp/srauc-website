@@ -1,0 +1,210 @@
+.form {
+  background: rgb(255, 206, 70);
+  padding-top: 115px;
+
+  @include viewport-desktop {
+    padding-top: 260px;
+  }
+
+  &__container {
+    @extend .grid;
+  }
+
+  &__info {
+    color: $blue-grey-dark;
+    grid-column: 2 / 10;
+    margin-bottom: 44px;
+
+    @include viewport-desktop {
+      grid-column: 3 / 11;
+      margin-bottom: 76px;
+    }
+  }
+
+  &__headline {
+    @extend .heading;
+    @extend .heading-6;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+    @include viewport-desktop {
+      font-size: 120px;
+      line-height: 1;
+      margin-bottom: 50px;
+      text-transform: initial;
+    }
+  }
+
+  &__subheadline {
+    @extend .text;
+    @extend .text-normal;
+
+    @include viewport-desktop {
+      margin-left: 120px;
+    }
+  }
+
+  &__break {
+    @include viewport-desktop {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    grid-column: 2 / 12;
+    margin-bottom: 50px;
+
+    @include viewport-desktop {
+      display: flex;
+      flex-flow: column wrap;
+      grid-column: 5 / 9;
+      margin-bottom: 154px;
+    }
+  }
+
+  &__group-fields {
+    margin-bottom: 56px;
+
+    @include viewport-desktop {
+      margin-bottom: 73px;
+    }
+  }
+
+  &__field {
+    @include viewport-desktop {
+      align-items: center;
+      display: flex;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 31px;
+
+      @include viewport-desktop {
+        margin-bottom: 61px;
+      }
+    }
+
+    &-label {
+      @extend .text;
+      @extend .text-normal;
+      @extend .text-normal--bold;
+      color: $blue-grey-dark;
+      display: block;
+      margin-bottom: 7px;
+
+      @include viewport-desktop {
+        // flex-basis: 111px;
+        // flex-grow: 1;
+        // flex-shrink: 0;
+        width: calc(111 * 100% / 460);
+        margin-bottom: initial;
+      }
+    }
+
+    &-input {
+      @extend .text;
+      @extend .text-large;
+      background: transparent;
+      border: 0;
+      border-bottom: 2px solid $blue-grey-dark;
+      color: $blue-grey-dark;
+      display: block;
+      width: 100%;
+
+      @include viewport-desktop {
+        margin-left: calc(10 * 100% / 460);
+        width: calc(340 * 100% / 460);
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    right: 16px;
+    width: 30px;
+  }
+
+  &__btn {
+    @extend .heading;
+    @extend .heading-3;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    color: $blue-grey-dark;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+
+    @include viewport-desktop {
+      align-self: flex-end;
+      margin-right: calc(25 * 100% / 460);
+      width: calc(295 * 100% / 460);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &-icon {
+      background: $white;
+      position: relative;
+
+      &:hover {
+
+        @include viewport-desktop {
+
+          & .form__icon{
+            animation: entryArrow .5s linear;
+          }
+        }
+      }
+    }
+
+    &-outline {
+      border-color: $blue-grey-dark;
+      font-weight: 400;
+      transition: background .15s linear, border .15s linear;
+
+      @include viewport-desktop{
+
+        &:hover {
+          background: $white;
+          border-color: $white;
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+
+      @include viewport-desktop {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@keyframes entryArrow {
+  0% {
+    opacity: .4;
+    transform: translateX(5px);
+  }
+
+  20% {
+    opacity: 0 ;
+    transform: translateX(20px);
+  }
+
+  30% {
+    opacity: 0 ;
+    transform: translateX(-120%);
+  }
+
+  100% {
+    opacity: 1 ;
+    transform: translateX(0%);
+  }
+}
+
+// Gradient yellow
+// Icon

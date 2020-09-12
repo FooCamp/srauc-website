@@ -9,8 +9,7 @@ const createLinks = (dataItems) => {
   return arrayLinks;
 };
 
-
-const headerSection = (data) => {
+const headerComp = (data) => {
 
   //Create icon close
   const iconClose = document.createElement('img');
@@ -74,7 +73,7 @@ const headerSection = (data) => {
     headerNav.classList.add('header__nav--active');
   });
 
- closeButton.addEventListener('click', () => {
+  closeButton.addEventListener('click', () => {
     const bodyPage = document.body;
     bodyPage.classList.remove('lock-scroll');
     window.scroll(0, pagePositionTop);
@@ -84,5 +83,4 @@ const headerSection = (data) => {
   return header;
 };
 
-
-export { headerSection };
+export { headerComp };
