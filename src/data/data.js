@@ -152,22 +152,22 @@ const pageData = {
         items: [
           {
             image: {
-              src: '',
-              alt: '',
+              src: 'gallery-',
+              alt: 'Foto de la galería 1',
             },
             text: '',
           },
           {
             image: {
-              src: '',
-              alt: '',
+              src: 'gallery-',
+              alt: 'Foto de la galería 1',
             },
             text: '',
           },
           {
             image: {
-              src: '',
-              alt: '',
+              src: 'gallery-',
+              alt: 'Foto de la galería 1',
             },
             text: '',
           },
@@ -223,44 +223,64 @@ const pageData = {
         title: 'Galeria',
         pictures: [
           {
-            src: '',
-            alt: '',
+            src: 'gallery-1',
+            alt: 'Foto de la galería 1',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery-2',
+            alt: 'Foto de la galería 2',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery-3',
+            alt: 'Foto de la galería 3',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery-4',
+            alt: 'Foto de la galería 4',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery-5',
+            alt: 'Foto de la galería 5',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery-6',
+            alt: 'Foto de la galería 6',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery-7',
+            alt: 'Foto de la galería 7',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery-8',
+            alt: 'Foto de la galería 8',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery-9',
+            alt: 'Foto de la galería 9',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery-10',
+            alt: 'Foto de la galería 10',
+          },
+          {
+            src: 'gallery-11',
+            alt: 'Foto de la galería 11',
+          },
+          {
+            src: 'gallery-12',
+            alt: 'Foto de la galería 12',
+          },
+          {
+            src: 'gallery-13',
+            alt: 'Foto de la galería 13',
+          },
+          {
+            src: 'gallery-14',
+            alt: 'Foto de la galería 14',
+          },
+          {
+            src: 'gallery-15',
+            alt: 'Foto de la galería 15',
           },
         ],
       },

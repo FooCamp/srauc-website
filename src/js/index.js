@@ -8,6 +8,7 @@ import { footerSection } from './components/footer';
 import { featuredMessageComp } from './components/featuredMessage';
 import { introText } from './components/introText';
 import { pageData } from '../data/data';
+import { galleryComp } from './components/galleryComp';
 
 /**
  * Component map
@@ -22,6 +23,7 @@ const components = {
   warningComp: featuredMessageComp,
   introductionTextComp: introText,
   footer: footerSection,
+  galleryComp: galleryComp
 };
 
 const getCurrentPage = () => {
