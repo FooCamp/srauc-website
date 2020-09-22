@@ -1,27 +1,29 @@
 // Component imports
 import { pageTitle } from './components/pageTitle';
 import defaultComp from './components/default';
-import { headerSection } from './components/header';
+import { headerComp } from './components/header';
 import { initialMessageComp } from './components/initialMessage';
 import { membersSection } from './components/members';
-import { footerSection } from './components/footer';
 import { featuredMessageComp } from './components/featuredMessage';
 import { introText } from './components/introText';
 import { pageData } from '../data/data';
 import { galleryComp } from './components/galleryComp';
+import { registerComp } from './components/registerComp';
+import { footerSection } from './components/footer';
 
 /**
  * Component map
  * each component name is mapped to its template.
  */
 const components = {
-  header: headerSection,
+  header: headerComp,
   default: defaultComp,
   pageTitle: pageTitle,
   textBlockComp: initialMessageComp,
   teamMembersComp: membersSection,
   warningComp: featuredMessageComp,
   introductionTextComp: introText,
+  registerFormComp: registerComp,
   footer: footerSection,
   galleryComp: galleryComp
 };

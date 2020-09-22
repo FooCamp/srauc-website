@@ -286,6 +286,45 @@ const pageData = {
       },
     ],
   },
+  registro: {
+    sections: [
+      {
+        component: 'registerFormComp',
+        headline: 'Regístrate',
+        subheadline: 'Nos pondremos<br class="form__break"> en contacto contigo.',
+        fields: [
+          {
+            label: 'Nombre:',
+            type: 'text',
+            placeholder: 'Ingresa tu nombre',
+          },
+          {
+            label: 'Correo:',
+            type: 'text',
+            placeholder: 'Ingresa tu correo',
+          },
+          {
+            label: 'Teléfono:',
+            type: 'number',
+            placeholder: 'Ingresa tu teléfono',
+          },
+        ],
+        buttonSend: {
+          text: 'Enviar',
+          href: './',
+          image: {
+            src: 'icon-arrow.svg',
+            alt: 'Icono Flecha Enviar'
+          },
+        },
+        buttonBack: {
+          text: 'Volver',
+          href: '/inicio',
+        },
+
+      },
+    ],
+  },
   common: {
     initalSections: [
       {
