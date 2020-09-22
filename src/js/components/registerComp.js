@@ -1,4 +1,4 @@
-import { newContainer, newText, newMultimedia } from "../helpers/helpers";
+import { newContainer, newText } from "../helpers/helpers";
 
 const createInputs = (formInputs) => {
   const arrayInputs = formInputs.map((input) => {
@@ -23,7 +23,6 @@ const registerComp = (data) => {
 
   const formHeadline = newText('h6', data.headline, ['form__headline']);
   const formSubheadline = newText('p', '', ['form__subheadline']);
-  //This is a "hack" to create a tag <br> within the subheadlines data
   formSubheadline.innerHTML = data.subheadline;
   const formInfo = newContainer('div', [formHeadline, formSubheadline], ['form__info']);
 
@@ -35,8 +34,9 @@ const registerComp = (data) => {
   formIcon.src = data.buttonSend.image.src;
   formIcon.alt = data.buttonSend.image.alt;
 
-  const formButtonIcon = document.createElement('a');
+  const formButtonIcon = document.createElement('button');
   formButtonIcon.classList.add('form__btn', 'form__btn-icon');
+  formButtonIcon.type = 'submit';
   formButtonIcon.innerText = data.buttonSend.text;
 
   formButtonIcon.appendChild(formIcon);
@@ -46,9 +46,10 @@ const registerComp = (data) => {
   formButtonBack.innerText = data.buttonBack.text;
   formButtonBack.href = data.buttonBack.href;
 
-  const formWrapper = newContainer('div', [formGroupFields, formButtonIcon, formButtonBack], ['form__wrapper']);
+  const formWrapper = newContainer('form', [formGroupFields, formButtonIcon, formButtonBack], ['form__wrapper']);
+  formWrapper.action = " ";
 
-  const formContainer = newContainer('div', [formInfo, formWrapper], ['form__container']);
+  const formContainer = newContainer('div', [formInfo, formWrapper], ['form__container', 'grid']);
   const form = newContainer('section', [formContainer], ['form']);
 
   return form;

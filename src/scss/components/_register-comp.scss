@@ -6,10 +6,6 @@
     padding-top: 260px;
   }
 
-  &__container {
-    @extend .grid;
-  }
-
   &__info {
     color: $blue-grey-dark;
     grid-column: 2 / 10;
@@ -132,14 +128,14 @@
     text-align: center;
     width: 100%;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     @include viewport-desktop {
       align-self: flex-end;
       margin-right: calc(25 * 100% / 460);
       width: calc(295 * 100% / 460);
-
-      &:hover {
-        cursor: pointer;
-      }
     }
 
     &-icon {
