@@ -47,11 +47,16 @@ const pageData = {
         title: 'Como recoger el aceite',
       },
       {
-        component: 'timelineItem',
+        component: 'timelineItemStep1',
+        timelineHeader: 'Cómo recoger el aceite',
         index: 0,
         title: 'Deja enfriar el aceite',
         text: 'Con esto evitamos posibles quemaduras o derretir el embase.',
-        icon: '',
+        icon: '01-icono-enfriar.svg',
+        image: {
+          src: 'foto.png',
+          alt: 'SRAUC',
+        },
       },
       {
         component: 'timelineItem',
