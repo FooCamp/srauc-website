@@ -8,7 +8,7 @@ import { footerSection } from './components/footer';
 import { featuredMessageComp } from './components/featuredMessage';
 import { introText } from './components/introText';
 import { pageData } from '../data/data';
-import { instructionsStep1 } from './components/instructions';
+import { instructions } from './components/instructions';
 
 /**
  * Component map
@@ -22,8 +22,8 @@ const components = {
   teamMembersComp: membersSection,
   warningComp: featuredMessageComp,
   introductionTextComp: introText,
-  // timelineHeader: initialMessageComp,
-  timelineItemStep1: instructionsStep1,
+  // timelineItemStep1: instructionsStep1,
+  timeline: instructions,
   footer: footerSection,
 };
 
