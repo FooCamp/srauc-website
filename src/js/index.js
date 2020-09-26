@@ -9,6 +9,7 @@ import { introText } from './components/introText';
 import { pageData } from '../data/data';
 import { registerComp } from './components/registerComp';
 import { footerSection } from './components/footer';
+import { instructions } from './components/instructions';
 
 /**
  * Component map
@@ -23,6 +24,7 @@ const components = {
   warningComp: featuredMessageComp,
   introductionTextComp: introText,
   registerFormComp: registerComp,
+  timeline: instructions,
   footer: footerSection,
 };
 
@@ -81,4 +83,3 @@ const pageInit = (data, { initalSections, finalSections }) => {
 };
 
 pageInit(pageData[getCurrentPage()], pageData.common);
-

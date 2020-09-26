@@ -1,0 +1,181 @@
+.instruction {
+  @extend .grid;
+  background-color: $white;
+  grid-auto-flow: row;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  @include viewport-desktop {
+    margin-bottom: 500px;
+  }
+
+  &__time-line-header {
+    @extend .display;
+    @extend .display-2;
+    color: $blue-grey-dark;
+    font-stretch: normal;
+    font-style: normal;
+    grid-column-end: 12;
+    grid-column-start: 2;
+    grid-row: auto;
+    margin-bottom: 50px;
+    @include viewport-desktop {
+      grid-column-end: 8;
+      grid-column-start: 3;
+      margin-bottom: 95px;
+    }
+  }
+
+  &__current-step-container {
+    margin-bottom: 25px;
+    @include viewport-desktop {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__steps-container {
+    display: flex;
+    flex-direction: column;
+    grid-column-end: 12;
+    grid-column-start: 2;
+    margin-bottom: 25px;
+    @include viewport-desktop {
+      align-items: flex-start;
+      flex-direction: row;
+      grid-column-end: 13;
+      grid-column-start: 1;
+      height: 1px;
+      justify-content: space-between;
+      margin-bottom: 100px;
+    }
+  }
+
+  &__separator {
+    background: $blue-grey-light;
+    border-top: 2px solid $blue-grey-light;
+    display: inline-block;
+    grid-column-end: 12;
+    grid-column-start: 4;
+    margin-bottom: 0;
+    position: relative;
+    vertical-align: middle;
+    width: calc(90 * 100% / 296);
+    @include viewport-desktop {
+      border-top: 1px solid $blue-grey-light;
+      width: calc(884 * 100% / 1061);
+    }
+  }
+
+  &__indicator {
+    background: $blue-grey-light;
+    border: 1px solid $blue-grey-light;
+    border-radius: 50%;
+    height: 25px;
+    margin: 0;
+    position: relative;
+    width: 25px;
+  }
+
+  &__indicator-step-2 {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    @include viewport-desktop {
+      display: none;
+    }
+  }
+
+  &__indicator-step-3 {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    @include viewport-desktop {
+      display: none;
+    }
+  }
+
+  &__time-line-icon-container {
+    display: inline-block;
+    height: 61px;
+    left: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 61px;
+  }
+
+  &__time-lines-container {
+    display: flex;
+    flex-direction: column;
+    grid-column-end: 12;
+    grid-column-start: 2;
+    @include viewport-desktop {
+      grid-column-end: 13;
+      grid-column-start: 1;
+    }
+  }
+
+  &__step-container {
+    @extend .text;
+    @extend .text-normal;
+    color: $blue-grey-dark;
+    font-stretch: normal;
+    font-style: normal;
+    margin-bottom: 50px;
+    @include viewport-desktop {
+      align-items: stretch;
+      display: flex;
+      flex-direction: column-reverse;
+      grid-column-end: 4;
+      grid-column-start: 1;
+      justify-content: flex-start;
+      margin: 0 20px;
+      width: 460px;
+    }
+  }
+
+  &__step-title {
+    @extend .heading-2;
+    margin-bottom: 12px;
+    @include viewport-desktop {
+      width: 291px;
+    }
+  }
+
+  &__timeline-step-text {
+    margin-bottom: 45px;
+  }
+
+  &__title-description-container {
+    align-items: flex-start;
+    margin-bottom: 45px;
+    max-width: calc(185 * 100% / 291);
+    @include viewport-desktop {
+      margin-left: 9vw;
+      max-width: calc(291 * 100% / 460);
+    }
+  }
+
+  &__step-image-container {
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+    @include viewport-desktop {
+      grid-column-end: 4;
+      grid-column-start: 1;
+      margin-bottom: 20px;
+      margin-left: -16vw;
+      width: 100%;
+    }
+  }
+
+  &__time-line-image {
+    @include viewport-desktop {
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+    }
+  }
+}
