@@ -1,44 +1,67 @@
 .footer {
   background-color: $green-dark;
-  max-width: 100%;
 
-  &__container {
+  &__title-link {
     color: $white;
-    grid-column: 2/12;
+    grid-column: 2 / 6;
+    padding-top: 50px;
+
+    @include viewport-desktop {
+      grid-column: 2 / 4;
+      padding-left: 20px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__container-text {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 12;
+    margin: 25px 0 35px;
+    
+    @include viewport-desktop {
+      display: flex;
+      flex-direction: row;
+      grid-column: 4 / 11;
+      margin: 50px 0;
+      padding-left: 20px;
+    }
   }
 
   &__container-email {
     display: inline-flex;
     margin: 9px 0;
+
+    @include viewport-desktop {
+      margin: 0 45px;
+    }
   }
 
   &__container-phone {
     display: inline-flex;
   }
-
-  &__container-text {
-    display: flex;
-    flex-direction: column;
-    height: 70px;
-    margin: 25px 0 35px;
-  }
-
+  
   &__email-label {
     margin-right: 5px;
-  }
-
-  &__link-icon {
-    height: 41px;
-    padding-bottom: 48px;
-    width: 41px;
   }
 
   &__phone-label {
     margin-right: 5px;
   }
 
-  &__title {
-    color: $white;
-    padding-top: 50px;
+  &__container-link {
+    grid-column: 2 / 4;
+    padding-bottom: 48px;
+    width: 41px;
+
+    @include viewport-desktop {
+      display: block;
+      grid-column: 11 / 12;
+      margin-left: auto;
+      margin-right: 10px;
+      padding: 39px 0;
+      width: 40px; 
+    }
   }
 }

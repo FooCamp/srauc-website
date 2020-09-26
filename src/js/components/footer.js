@@ -42,10 +42,10 @@ const footerSection = (data) => {
   const container = newContainer(
     'div',
     [tittleLink, containerInformation, ...socialMultimedia],
-    ['footer__container'],
+    ['grid', 'footer__container'],
   );
 
-  const footer = newContainer('footer', [container], ['grid', 'footer']);
+  const footer = newContainer('footer', [container], ['footer']);
 
   return footer;
 };
