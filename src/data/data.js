@@ -221,66 +221,97 @@ const pageData = {
       {
         component: 'galleryComp',
         title: 'Galeria',
-        pictures: [
+        photos: [
           {
-            src: 'gallery-1',
+            src: 'gallery/gallery-1.jpg',
             alt: 'Foto de la galería 1',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía'
           },
           {
-            src: 'gallery-2',
+            src: 'gallery/gallery-2.jpg',
             alt: 'Foto de la galería 2',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía'
           },
           {
-            src: 'gallery-3',
+            src: 'gallery/gallery-3.jpg',
             alt: 'Foto de la galería 3',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía'
           },
           {
-            src: 'gallery-4',
+            src: 'gallery/gallery-4.jpg',
             alt: 'Foto de la galería 4',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía'
           },
           {
-            src: 'gallery-5',
+            src: 'gallery/gallery-5.jpg',
             alt: 'Foto de la galería 5',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía'
           },
           {
-            src: 'gallery-6',
+            src: 'gallery/gallery-6.jpg',
             alt: 'Foto de la galería 6',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía'
           },
           {
-            src: 'gallery-7',
+            src: 'gallery/gallery-7.jpg',
             alt: 'Foto de la galería 7',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía'
           },
           {
-            src: 'gallery-8',
+            src: 'gallery/gallery-8.jpg',
             alt: 'Foto de la galería 8',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía'
           },
           {
-            src: 'gallery-9',
+            src: 'gallery/gallery-9.jpg',
             alt: 'Foto de la galería 9',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía'
           },
           {
-            src: 'gallery-10',
+            src: 'gallery/gallery-10.jpg',
             alt: 'Foto de la galería 10',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía'
           },
           {
-            src: 'gallery-11',
+            src: 'gallery/gallery-11.jpg',
             alt: 'Foto de la galería 11',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía'
           },
           {
-            src: 'gallery-12',
+            src: 'gallery/gallery-12.jpg',
             alt: 'Foto de la galería 12',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía'
           },
           {
-            src: 'gallery-13',
+            src: 'gallery/gallery-13.jpg',
             alt: 'Foto de la galería 13',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía'
           },
           {
-            src: 'gallery-14',
+
+            src: 'gallery/gallery-14.jpg',
             alt: 'Foto de la galería 14',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía'
           },
           {
-            src: 'gallery-15',
+            src: 'gallery/gallery-15.jpg',
             alt: 'Foto de la galería 15',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía'
           },
         ],
       },

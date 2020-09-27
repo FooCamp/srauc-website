@@ -1,0 +1,144 @@
+.gallery {
+  margin-bottom: 46px;
+
+  @include viewport-desktop {
+    margin-bottom: 70px;
+  }
+
+  &__container {
+  }
+
+  &__headline {
+    grid-column: 2 / 10;
+    margin-bottom: 50px;
+
+    @include viewport-desktop {
+      grid-column: 6 / -1;
+    }
+  }
+
+  &__photos,
+  &__modal {
+    grid-column: 1 / 13;
+
+    @include viewport-desktop {
+      grid-column: 2 / 12;
+    }
+  }
+
+  &__photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    margin-bottom: 28px;
+
+    @include viewport-desktop {
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 19px;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__photo {
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::after {
+      content: ' ';
+      display: block;
+      padding-bottom: 100%;
+    }
+
+    & > img {
+      height: 100%;
+      object-position: top center;
+      object-fit: cover;
+      position: absolute;
+    }
+  }
+
+  &__modal {
+    align-items: flex-start;
+    background: $grey-lighter;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 15px 15px 20px;
+    position: relative;
+
+    @include viewport-desktop {
+      background: transparent;
+      flex-wrap: nowrap;
+      justify-content: initial;
+      padding: 0;
+    }
+
+    &-img {
+      align-items: center;
+      display: flex;
+      margin-bottom: 23px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+
+      @include viewport-desktop {
+        flex-shrink: 0;
+        margin-bottom: 0;
+        width: 59.4%;
+      }
+
+      &::after {
+        content: ' ';
+        display: block;
+        padding-bottom: 75%;
+      }
+
+      & > img {
+        object-fit: cover;
+        position: absolute;
+        height: 100%;
+
+          @include viewport-desktop {
+        }
+      }
+    }
+
+    &-caption {
+      max-width: calc(100% - 75px);
+
+      @include viewport-desktop {
+        padding-top: 50px;
+        margin-left: 19px;
+      }
+    }
+
+    &-description,
+    &-date {
+      color: $blue-grey-dark;
+    }
+
+    &-description {
+      margin-bottom: 5px;
+
+      @include viewport-desktop {
+        font-size: 22px;
+        line-height: 0.9;
+        margin-bottom: 8px;
+      }
+    }
+
+    &-button {
+      bottom: 20px;
+      width: 60px;
+
+      @include viewport-desktop {
+        bottom: 0;
+        position: absolute;
+        right: 20.3%;
+      }
+    }
+  }
+}
