@@ -8,10 +8,14 @@ import { featuredMessageComp } from './components/featuredMessage';
 import { introText } from './components/introText';
 import { pageData } from '../data/data';
 import { registerComp } from './components/registerComp';
+<<<<<<< HEAD
 import { infographicSectionHeader } from './components/infographicHeader';
 import { infographicSectionSiphon } from './components/infographicSiphon';
 import { infographicSectionCan } from './components/infographicCan';
 import { infographicSectionPan } from './components/infographicPan';
+=======
+import { sliderComp } from './components/sliderComp';
+>>>>>>> 756b1367d214afb556716a22b64db723f98c5c40
 import { footerSection } from './components/footer';
 
 /**
@@ -27,10 +31,14 @@ const components = {
   warningComp: featuredMessageComp,
   introductionTextComp: introText,
   registerFormComp: registerComp,
+<<<<<<< HEAD
   percentTimelineHeader: infographicSectionHeader,
   percentTimelineItemSiphon: infographicSectionSiphon,
   percentTimelineItemCan: infographicSectionCan,
   percentTimelineItemPan: infographicSectionPan,
+=======
+  slider: sliderComp,
+>>>>>>> 756b1367d214afb556716a22b64db723f98c5c40
   footer: footerSection,
 };
 
