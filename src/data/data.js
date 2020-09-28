@@ -153,7 +153,7 @@ const pageData = {
           {
             image: {
               src: 'slider/img-slide-1.svg',
-              alt: 'Texto alternativo slide 1',
+              alt: 'Texto alternativo de la imagen del slide 1',
             },
             text: {
               headline: 'Jabón',
@@ -164,7 +164,7 @@ const pageData = {
           {
             image: {
               src: 'slider/img-slide-2.svg',
-              alt: 'Texto alternativo slide 2',
+              alt: 'Texto alternativo de la imagen del slide 2',
             },
             text: {
               headline: 'Jabón',
@@ -174,8 +174,8 @@ const pageData = {
           },
           {
             image: {
-              src: 'slider/img-slide-1.svg',
-              alt: 'Texto alternativo slide 2',
+              src: 'slider/img-slide-3.svg',
+              alt: 'Texto alternativo de la imagen del slide 3',
             },
             text: {
               headline: 'Jabón',
@@ -233,46 +233,96 @@ const pageData = {
       {
         component: 'galleryComp',
         title: 'Galeria',
-        pictures: [
+        photos: [
           {
-            src: '',
-            alt: '',
+            src: 'slider/slide-11.jpg',
+            alt: 'Texto alternativo de la imagen del slide 1',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'slider/slide-12.jpg',
+            alt: 'Foto de la galería 2',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'slider/slide-13.jpg',
+            alt: 'Foto de la galería 3',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'slider/slide-14.jpg',
+            alt: 'Foto de la galería 4',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'slider/slide-15.jpg',
+            alt: 'Foto de la galería 5',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'slider/slide-16.jpg',
+            alt: 'Foto de la galería 6',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'slider/slide-17.jpg',
+            alt: 'Foto de la galería 7',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'slider/slide-18.jpg',
+            alt: 'Foto de la galería 8',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'slider/slide-19.jpg',
+            alt: 'Foto de la galería 9',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'slider/slide-110.jpg',
+            alt: 'Texto alternativo de la imagen del slide 10',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
+          },
+          {
+            src: 'slider/slide-111.jpg',
+            alt: 'Texto alternativo de la imagen del slide 11',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
+          },
+          {
+            src: 'slider/slide-112.jpg',
+            alt: 'Texto alternativo de la imagen del slide 12',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
+          },
+          {
+            src: 'slider/slide-113.jpg',
+            alt: 'Texto alternativo de la imagen del slide 13',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
+          },
+          {
+            src: 'slider/slide-114.jpg',
+            alt: 'Texto alternativo de la imagen del slide 14',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
+          },
+          {
+            src: 'slider/slide-115.jpg',
+            alt: 'Texto alternativo de la imagen del slide 15',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
         ],
       },

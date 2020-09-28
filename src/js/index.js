@@ -83,4 +83,3 @@ const pageInit = (data, { initalSections, finalSections }) => {
 };
 
 pageInit(pageData[getCurrentPage()], pageData.common);
-
