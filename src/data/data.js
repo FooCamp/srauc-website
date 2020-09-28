@@ -147,29 +147,41 @@ const pageData = {
         jarFlag: true,
       },
       {
-        component: 'carouselComp',
+        component: 'slider',
         title: 'El aceite se convierte en:',
-        items: [
+        slides: [
           {
             image: {
-              src: '',
-              alt: '',
+              src: 'slider/img-slide-1.svg',
+              alt: 'Texto alternativo slide 1',
             },
-            text: '',
+            text: {
+              headline: 'Jabón',
+              description:
+                'Permitiendo que tengan un nuevo uso que además cuida el medio ambiente.',
+            },
           },
           {
             image: {
-              src: '',
-              alt: '',
+              src: 'slider/img-slide-2.svg',
+              alt: 'Texto alternativo slide 2',
             },
-            text: '',
+            text: {
+              headline: 'Jabón',
+              description:
+                'Permitiendo que tengan un nuevo uso que además cuida el medio ambiente.',
+            },
           },
           {
             image: {
-              src: '',
-              alt: '',
+              src: 'slider/img-slide-1.svg',
+              alt: 'Texto alternativo slide 2',
             },
-            text: '',
+            text: {
+              headline: 'Jabón',
+              description:
+                'Permitiendo que tengan un nuevo uso que además cuida el medio ambiente.',
+            },
           },
         ],
       },
@@ -294,14 +306,13 @@ const pageData = {
           href: './',
           image: {
             src: 'icon-arrow.svg',
-            alt: 'Icono Flecha Enviar'
+            alt: 'Icono Flecha Enviar',
           },
         },
         buttonBack: {
           text: 'Volver',
           href: '/inicio',
         },
-
       },
     ],
   },

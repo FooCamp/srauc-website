@@ -8,6 +8,7 @@ import { featuredMessageComp } from './components/featuredMessage';
 import { introText } from './components/introText';
 import { pageData } from '../data/data';
 import { registerComp } from './components/registerComp';
+import { sliderComp } from './components/sliderComp';
 import { footerSection } from './components/footer';
 
 /**
@@ -23,6 +24,7 @@ const components = {
   warningComp: featuredMessageComp,
   introductionTextComp: introText,
   registerFormComp: registerComp,
+  slider: sliderComp,
   footer: footerSection,
 };
 
