@@ -15,11 +15,6 @@
 
   &-2 {
     font-size: 46px;
-
-    @include viewport-desktop{
-      font-size: 120px;
-      line-height: 1;
-    }
   }
 }
 
