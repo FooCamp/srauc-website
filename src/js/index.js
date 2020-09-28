@@ -2,6 +2,7 @@
 import { pageTitle } from './components/pageTitle';
 import defaultComp from './components/default';
 import { headerComp } from './components/header';
+import { heroComp } from './components/heroComp';
 import { initialMessageComp } from './components/initialMessage';
 import { membersSection } from './components/members';
 import { featuredMessageComp } from './components/featuredMessage';
@@ -23,6 +24,7 @@ import { instructions } from './components/instructions';
  */
 const components = {
   header: headerComp,
+  hero: heroComp,
   default: defaultComp,
   pageTitle: pageTitle,
   textBlockComp: initialMessageComp,
