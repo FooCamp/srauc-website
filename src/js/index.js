@@ -7,6 +7,7 @@ import { membersSection } from './components/members';
 import { featuredMessageComp } from './components/featuredMessage';
 import { introText } from './components/introText';
 import { pageData } from '../data/data';
+import { galleryComp } from './components/galleryComp';
 import { registerComp } from './components/registerComp';
 import { infographicSectionHeader } from './components/infographicHeader';
 import { infographicSectionSiphon } from './components/infographicSiphon';
@@ -34,6 +35,7 @@ const components = {
   percentTimelineItemPan: infographicSectionPan,
   slider: sliderComp,
   footer: footerSection,
+  galleryComp: galleryComp
 };
 
 const getCurrentPage = () => {
