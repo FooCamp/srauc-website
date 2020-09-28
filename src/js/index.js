@@ -1,26 +1,42 @@
 // Component imports
 import { pageTitle } from './components/pageTitle';
 import defaultComp from './components/default';
-import { headerSection } from './components/header';
+import { headerComp } from './components/header';
 import { initialMessageComp } from './components/initialMessage';
 import { membersSection } from './components/members';
-import { footerSection } from './components/footer';
 import { featuredMessageComp } from './components/featuredMessage';
 import { introText } from './components/introText';
 import { pageData } from '../data/data';
+import { galleryComp } from './components/galleryComp';
+import { registerComp } from './components/registerComp';
+import { infographicSectionHeader } from './components/infographicHeader';
+import { infographicSectionSiphon } from './components/infographicSiphon';
+import { infographicSectionCan } from './components/infographicCan';
+import { infographicSectionPan } from './components/infographicPan';
+import { sliderComp } from './components/sliderComp';
+import { footerSection } from './components/footer';
+import { instructions } from './components/instructions';
 
 /**
  * Component map
  * each component name is mapped to its template.
  */
 const components = {
-  header: headerSection,
+  header: headerComp,
   default: defaultComp,
   pageTitle: pageTitle,
   textBlockComp: initialMessageComp,
   teamMembersComp: membersSection,
   warningComp: featuredMessageComp,
   introductionTextComp: introText,
+  registerFormComp: registerComp,
+  timeline: instructions,
+  percentTimelineHeader: infographicSectionHeader,
+  percentTimelineItemSiphon: infographicSectionSiphon,
+  percentTimelineItemCan: infographicSectionCan,
+  percentTimelineItemPan: infographicSectionPan,
+  slider: sliderComp,
+  galleryComp: galleryComp,
   footer: footerSection,
 };
 
@@ -79,4 +95,3 @@ const pageInit = (data, { initalSections, finalSections }) => {
 };
 
 pageInit(pageData[getCurrentPage()], pageData.common);
-

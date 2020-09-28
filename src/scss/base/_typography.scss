@@ -26,6 +26,11 @@
   &-1 {
     font-size: 40px;
     line-height: 1.25;
+
+    @include viewport-desktop {
+      font-size: 120px;
+      line-height: 1;
+    }
   }
 
   &-2 {
@@ -36,6 +41,11 @@
   &-3 {
     font-size: 22px;
     line-height: 0.9;
+  }
+
+  &-6 {
+    font-size: 16px;
+    line-height: 1.6;
   }
 }
 

@@ -43,23 +43,53 @@ const pageData = {
         title: '¿Sabías que 1 litro de aceite contamina más de 1000 litros de agua?',
       },
       {
-        component: 'timelineHeader',
+        component: 'timeline',
         title: 'Como recoger el aceite',
-      },
-      {
-        component: 'timelineItem',
-        index: 0,
-        title: 'Deja enfriar el aceite',
-        text: 'Con esto evitamos posibles quemaduras o derretir el embase.',
-        icon: '',
-      },
-      {
-        component: 'timelineItem',
-        index: 1,
-        title: 'Filtra el aceite',
-        text:
-          'Filtre o cuele el aceite para que no pasen restos de comida, y viértelo en un envase de plástico, que puede ser el mismo frasco donde viene el aceite, cierre bien con la tapa.',
-        icon: '',
+        timelineSteps: [
+          {
+            component: 'timelineItem',
+            index: 0,
+            title: 'Deja enfriar el aceite',
+            text: 'Con esto evitamos posibles quemaduras o derretir el embase.',
+            icon: '01-icono-enfriar.svg',
+            additional: {
+              type: 'image',
+              image: {
+                src: '01-foto-enfriar.png',
+                alt: 'SRAUC',
+              },
+            },
+          },
+          {
+            component: 'timelineItem',
+            index: 1,
+            title: 'Filtra el aceite',
+            text:
+              'Filtre o cuele el aceite para que no pasen restos de comida, y viértelo en un envase de plástico, que puede ser el mismo frasco donde viene el aceite, cierre bien con la tapa.',
+            icon: '02-icono-filtrar.svg',
+            additional: {
+              type: 'warning',
+              component: 'warningComp',
+              title: 'Evita mezclar el aceite usado con agua.',
+              icon: 'icono-aviso@3x.png',
+            },
+          },
+          {
+            component: 'timelineItem',
+            index: 2,
+            title: 'Trae el aceite',
+            icon: '03-icono-traer.svg',
+            additional: {
+              type: 'mapComp',
+              component: 'googleMapComp',
+              title: 'Institución Educativa República de Uruguay',
+              text1: 'Calle 91a No 70a-193 Barrio Alfonso López Medellín',
+              text2: 'Aula 2 -204 (bloque 2)',
+              text3:
+                'O deposítalo en la caneca color naranja que se encuentra al ingreso de la Institución.',
+            },
+          },
+        ],
       },
       {
         component: 'warningComp',
@@ -71,12 +101,6 @@ const pageData = {
         component: 'warningComp',
         title: 'Evita mezclar el aceite usado con agua.',
         icon: 'icono-aviso@3x.png',
-      },
-      {
-        component: 'timelineItem',
-        index: 2,
-        title: 'Trae el aceite',
-        icon: '',
       },
       {
         component: 'mapComp',
@@ -114,25 +138,34 @@ const pageData = {
         title: 'Según nuestro estudio:',
       },
       {
-        component: 'percentTimelineItem',
+        component: 'percentTimelineItemSiphon',
         percent: '30%',
         title: 'Lo tiran por el desagüe',
         text: 'Contaminando ríos y depósitos de agua, creando focos de hongos y bacterías.',
-        image: '',
+        image: {
+          src: 'sifon.svg',
+          alt: 'sifon',
+        },
       },
       {
-        component: 'percentTimelineItem',
+        component: 'percentTimelineItemCan',
         percent: '20%',
         title: 'Lo tiran a la basura',
         text: 'Filtrándose en suelos, poniendo en riesgo la vida al rededor.',
-        image: '',
+        image: {
+          src: 'caneca.svg',
+          alt: 'caneca de basura',
+        },
       },
       {
-        component: 'percentTimelineItem',
+        component: 'percentTimelineItemPan',
         percent: '7%',
         title: 'Lo reutiliza',
         text: 'Poniendo en riesgo la salud propia.',
-        image: '',
+        image: {
+          src: 'sarten.svg',
+          alt: 'sarten',
+        },
       },
       {
         component: 'scaledText',
@@ -147,29 +180,41 @@ const pageData = {
         jarFlag: true,
       },
       {
-        component: 'carouselComp',
+        component: 'slider',
         title: 'El aceite se convierte en:',
-        items: [
+        slides: [
           {
             image: {
-              src: '',
-              alt: '',
+              src: 'slider/img-slide-1.svg',
+              alt: 'Texto alternativo de la imagen del slide 1',
             },
-            text: '',
+            text: {
+              headline: 'Jabón',
+              description:
+                'Permitiendo que tengan un nuevo uso que además cuida el medio ambiente.',
+            },
           },
           {
             image: {
-              src: '',
-              alt: '',
+              src: 'slider/img-slide-2.svg',
+              alt: 'Texto alternativo de la imagen del slide 2',
             },
-            text: '',
+            text: {
+              headline: 'Jabón',
+              description:
+                'Permitiendo que tengan un nuevo uso que además cuida el medio ambiente.',
+            },
           },
           {
             image: {
-              src: '',
-              alt: '',
+              src: 'slider/img-slide-3.svg',
+              alt: 'Texto alternativo de la imagen del slide 3',
             },
-            text: '',
+            text: {
+              headline: 'Jabón',
+              description:
+                'Permitiendo que tengan un nuevo uso que además cuida el medio ambiente.',
+            },
           },
         ],
       },
@@ -221,48 +266,136 @@ const pageData = {
       {
         component: 'galleryComp',
         title: 'Galeria',
-        pictures: [
+        photos: [
           {
-            src: '',
-            alt: '',
+            src: 'gallery/gallery-1.jpg',
+            alt: 'Foto de la galería 1',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery/gallery-2.jpg',
+            alt: 'Foto de la galería 2',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery/gallery-3.jpg',
+            alt: 'Foto de la galería 3',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery/gallery-4.jpg',
+            alt: 'Foto de la galería 4',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery/gallery-5.jpg',
+            alt: 'Foto de la galería 5',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery/gallery-6.jpg',
+            alt: 'Foto de la galería 6',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery/gallery-7.jpg',
+            alt: 'Foto de la galería 7',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery/gallery-8.jpg',
+            alt: 'Foto de la galería 8',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery/gallery-9.jpg',
+            alt: 'Foto de la galería 9',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
           {
-            src: '',
-            alt: '',
+            src: 'gallery/gallery-10.jpg',
+            alt: 'Foto de la galería 10',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
+          },
+          {
+            src: 'gallery/gallery-11.jpg',
+            alt: 'Foto de la galería 11',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
+          },
+          {
+            src: 'gallery/gallery-12.jpg',
+            alt: 'Foto de la galería 12',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
+          },
+          {
+            src: 'gallery/gallery-13.jpg',
+            alt: 'Foto de la galería 13',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
+          },
+          {
+            src: 'gallery/gallery-14.jpg',
+            alt: 'Foto de la galería 14',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
+          },
+          {
+            src: 'gallery/gallery-15.jpg',
+            alt: 'Foto de la galería 15',
+            description: 'Descripción de la fotografía',
+            fecha: 'Fecha de la fotografía',
           },
         ],
+      },
+    ],
+  },
+  registro: {
+    sections: [
+      {
+        component: 'registerFormComp',
+        headline: 'Regístrate',
+        subheadline: 'Nos pondremos<br class="form__break"> en contacto contigo.',
+        fields: [
+          {
+            label: 'Nombre:',
+            type: 'text',
+            placeholder: 'Ingresa tu nombre',
+          },
+          {
+            label: 'Correo:',
+            type: 'text',
+            placeholder: 'Ingresa tu correo',
+          },
+          {
+            label: 'Teléfono:',
+            type: 'number',
+            placeholder: 'Ingresa tu teléfono',
+          },
+        ],
+        buttonSend: {
+          text: 'Enviar',
+          href: './',
+          image: {
+            src: 'icon-arrow.svg',
+            alt: 'Icono Flecha Enviar',
+          },
+        },
+        buttonBack: {
+          text: 'Volver',
+          href: '/inicio',
+        },
       },
     ],
   },
