@@ -7,7 +7,13 @@ import { membersSection } from './components/members';
 import { featuredMessageComp } from './components/featuredMessage';
 import { introText } from './components/introText';
 import { pageData } from '../data/data';
+import { galleryComp } from './components/galleryComp';
 import { registerComp } from './components/registerComp';
+import { infographicSectionHeader } from './components/infographicHeader';
+import { infographicSectionSiphon } from './components/infographicSiphon';
+import { infographicSectionCan } from './components/infographicCan';
+import { infographicSectionPan } from './components/infographicPan';
+import { sliderComp } from './components/sliderComp';
 import { footerSection } from './components/footer';
 import { instructions } from './components/instructions';
 
@@ -25,6 +31,12 @@ const components = {
   introductionTextComp: introText,
   registerFormComp: registerComp,
   timeline: instructions,
+  percentTimelineHeader: infographicSectionHeader,
+  percentTimelineItemSiphon: infographicSectionSiphon,
+  percentTimelineItemCan: infographicSectionCan,
+  percentTimelineItemPan: infographicSectionPan,
+  slider: sliderComp,
+  galleryComp: galleryComp,
   footer: footerSection,
 };
 
