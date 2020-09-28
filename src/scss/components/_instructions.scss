@@ -14,20 +14,30 @@
     color: $blue-grey-dark;
     font-stretch: normal;
     font-style: normal;
-    grid-column-end: 12;
-    grid-column-start: 2;
+    grid-column: 2/12;
     grid-row: auto;
-    margin-bottom: 50px;
     @include viewport-desktop {
-      grid-column-end: 8;
-      grid-column-start: 3;
+      grid-column: 3/8;
       margin-bottom: 95px;
+    }
+  }
+
+  &__all-steps-indicator-container {
+    display: none;
+    @include viewport-desktop {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      grid-column: 2/12;
+      margin-bottom: 45px;
     }
   }
 
   &__current-step-container {
     margin-bottom: 25px;
+    margin-top: 50px;
     @include viewport-desktop {
+      display: none;
       margin-bottom: 100px;
     }
   }
@@ -35,14 +45,12 @@
   &__steps-container {
     display: flex;
     flex-direction: column;
-    grid-column-end: 12;
-    grid-column-start: 2;
+    grid-column: 2/12;
     margin-bottom: 25px;
     @include viewport-desktop {
       align-items: flex-start;
       flex-direction: row;
-      grid-column-end: 13;
-      grid-column-start: 1;
+      grid-column: 1/13;
       height: 1px;
       justify-content: space-between;
       margin-bottom: 100px;
@@ -50,18 +58,25 @@
   }
 
   &__separator {
-    background: $blue-grey-light;
-    border-top: 2px solid $blue-grey-light;
+    border-top: 3px solid $blue-grey-light;
     display: inline-block;
-    grid-column-end: 12;
-    grid-column-start: 4;
     margin-bottom: 0;
-    position: relative;
     vertical-align: middle;
     width: calc(90 * 100% / 296);
     @include viewport-desktop {
-      border-top: 1px solid $blue-grey-light;
-      width: calc(884 * 100% / 1061);
+      border-top: 3px solid $blue-grey;
+      width: calc(412 * 100% / 1061);
+    }
+    &--dark-step {
+      border-top: 3px solid $blue-grey;
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+      width: calc(90 * 100% / 296);
+      @include viewport-desktop {
+        border-top: 3px solid $blue-grey;
+        width: calc(412 * 100% / 1061);
+      }
     }
   }
 
@@ -69,48 +84,31 @@
     background: $blue-grey-light;
     border: 1px solid $blue-grey-light;
     border-radius: 50%;
+    display: inline-block;
     height: 25px;
     margin: 0;
-    position: relative;
+    vertical-align: middle;
     width: 25px;
-  }
-
-  &__indicator-step-2 {
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    @include viewport-desktop {
-      display: none;
-    }
-  }
-
-  &__indicator-step-3 {
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    @include viewport-desktop {
-      display: none;
+    &--dark {
+      background: $blue-grey;
+      border: 1px solid $blue-grey-light;
+      border-radius: 50%;
+      display: inline-block;
+      height: 25px;
+      margin: 0;
+      vertical-align: middle;
+      width: 25px;
+      @include viewport-desktop {
+        display: none;
+      }
     }
   }
 
   &__time-line-icon-container {
     display: inline-block;
     height: 61px;
-    left: 2px;
-    position: relative;
     vertical-align: middle;
     width: 61px;
-  }
-
-  &__time-lines-container {
-    display: flex;
-    flex-direction: column;
-    grid-column-end: 12;
-    grid-column-start: 2;
-    @include viewport-desktop {
-      grid-column-end: 13;
-      grid-column-start: 1;
-    }
   }
 
   &__step-container {
@@ -124,8 +122,6 @@
       align-items: stretch;
       display: flex;
       flex-direction: column-reverse;
-      grid-column-end: 4;
-      grid-column-start: 1;
       justify-content: flex-start;
       margin: 0 20px;
       width: 460px;
@@ -147,14 +143,17 @@
   &__title-description-container {
     align-items: flex-start;
     margin-bottom: 45px;
-    max-width: calc(185 * 100% / 291);
     @include viewport-desktop {
       margin-left: 9vw;
       max-width: calc(291 * 100% / 460);
     }
+    &--hide {
+      display: none;
+    }
   }
 
   &__step-image-container {
+    height: 324px;
     left: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
@@ -163,8 +162,6 @@
     right: 50%;
     width: 100vw;
     @include viewport-desktop {
-      grid-column-end: 4;
-      grid-column-start: 1;
       margin-bottom: 20px;
       margin-left: -16vw;
       width: 100%;
@@ -177,5 +174,11 @@
       object-fit: cover;
       position: relative;
     }
+  }
+
+  &__location-info {
+    margin: 25px 0;
+    object-fit: cover;
+    position: relative;
   }
 }

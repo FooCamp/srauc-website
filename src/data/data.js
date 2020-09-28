@@ -68,14 +68,10 @@ const pageData = {
               'Filtre o cuele el aceite para que no pasen restos de comida, y viértelo en un envase de plástico, que puede ser el mismo frasco donde viene el aceite, cierre bien con la tapa.',
             icon: '02-icono-filtrar.svg',
             additional: {
-              type: 'image',
+              type: 'warning',
               component: 'warningComp',
               title: 'Evita mezclar el aceite usado con agua.',
               icon: 'icono-aviso@3x.png',
-              image: {
-                src: '01-foto-enfriar.png',
-                alt: 'SRAUC',
-              },
             },
           },
           {
@@ -84,12 +80,8 @@ const pageData = {
             title: 'Trae el aceite',
             icon: '03-icono-traer.svg',
             additional: {
-              type: 'image',
-              component: 'mapComp',
-              image: {
-                src: '01-foto-enfriar.png',
-                alt: 'SRAUC',
-              },
+              type: 'mapComp',
+              component: 'googleMapComp',
               title: 'Institución Educativa República de Uruguay',
               text1: 'Calle 91a No 70a-193 Barrio Alfonso López Medellín',
               text2: 'Aula 2 -204 (bloque 2)',
