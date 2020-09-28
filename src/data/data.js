@@ -147,29 +147,41 @@ const pageData = {
         jarFlag: true,
       },
       {
-        component: 'carouselComp',
+        component: 'slider',
         title: 'El aceite se convierte en:',
-        items: [
+        slides: [
           {
             image: {
-              src: 'gallery-',
-              alt: 'Foto de la galería 1',
+              src: 'slider/img-slide-1.svg',
+              alt: 'Texto alternativo de la imagen del slide 1',
             },
-            text: '',
+            text: {
+              headline: 'Jabón',
+              description:
+                'Permitiendo que tengan un nuevo uso que además cuida el medio ambiente.',
+            },
           },
           {
             image: {
-              src: 'gallery-',
-              alt: 'Foto de la galería 1',
+              src: 'slider/img-slide-2.svg',
+              alt: 'Texto alternativo de la imagen del slide 2',
             },
-            text: '',
+            text: {
+              headline: 'Jabón',
+              description:
+                'Permitiendo que tengan un nuevo uso que además cuida el medio ambiente.',
+            },
           },
           {
             image: {
-              src: 'gallery-',
-              alt: 'Foto de la galería 1',
+              src: 'slider/img-slide-3.svg',
+              alt: 'Texto alternativo de la imagen del slide 3',
             },
-            text: '',
+            text: {
+              headline: 'Jabón',
+              description:
+                'Permitiendo que tengan un nuevo uso que además cuida el medio ambiente.',
+            },
           },
         ],
       },
@@ -226,92 +238,91 @@ const pageData = {
             src: 'gallery/gallery-1.jpg',
             alt: 'Foto de la galería 1',
             description: 'Descripción de la fotografía',
-            fecha: 'Fecha de la fotografía'
+            fecha: 'Fecha de la fotografía',
           },
           {
             src: 'gallery/gallery-2.jpg',
             alt: 'Foto de la galería 2',
             description: 'Descripción de la fotografía',
-            fecha: 'Fecha de la fotografía'
+            fecha: 'Fecha de la fotografía',
           },
           {
             src: 'gallery/gallery-3.jpg',
             alt: 'Foto de la galería 3',
             description: 'Descripción de la fotografía',
-            fecha: 'Fecha de la fotografía'
+            fecha: 'Fecha de la fotografía',
           },
           {
             src: 'gallery/gallery-4.jpg',
             alt: 'Foto de la galería 4',
             description: 'Descripción de la fotografía',
-            fecha: 'Fecha de la fotografía'
+            fecha: 'Fecha de la fotografía',
           },
           {
             src: 'gallery/gallery-5.jpg',
             alt: 'Foto de la galería 5',
             description: 'Descripción de la fotografía',
-            fecha: 'Fecha de la fotografía'
+            fecha: 'Fecha de la fotografía',
           },
           {
             src: 'gallery/gallery-6.jpg',
             alt: 'Foto de la galería 6',
             description: 'Descripción de la fotografía',
-            fecha: 'Fecha de la fotografía'
+            fecha: 'Fecha de la fotografía',
           },
           {
             src: 'gallery/gallery-7.jpg',
             alt: 'Foto de la galería 7',
             description: 'Descripción de la fotografía',
-            fecha: 'Fecha de la fotografía'
+            fecha: 'Fecha de la fotografía',
           },
           {
             src: 'gallery/gallery-8.jpg',
             alt: 'Foto de la galería 8',
             description: 'Descripción de la fotografía',
-            fecha: 'Fecha de la fotografía'
+            fecha: 'Fecha de la fotografía',
           },
           {
             src: 'gallery/gallery-9.jpg',
             alt: 'Foto de la galería 9',
             description: 'Descripción de la fotografía',
-            fecha: 'Fecha de la fotografía'
+            fecha: 'Fecha de la fotografía',
           },
           {
             src: 'gallery/gallery-10.jpg',
             alt: 'Foto de la galería 10',
             description: 'Descripción de la fotografía',
-            fecha: 'Fecha de la fotografía'
+            fecha: 'Fecha de la fotografía',
           },
           {
             src: 'gallery/gallery-11.jpg',
             alt: 'Foto de la galería 11',
             description: 'Descripción de la fotografía',
-            fecha: 'Fecha de la fotografía'
+            fecha: 'Fecha de la fotografía',
           },
           {
             src: 'gallery/gallery-12.jpg',
             alt: 'Foto de la galería 12',
             description: 'Descripción de la fotografía',
-            fecha: 'Fecha de la fotografía'
+            fecha: 'Fecha de la fotografía',
           },
           {
             src: 'gallery/gallery-13.jpg',
             alt: 'Foto de la galería 13',
             description: 'Descripción de la fotografía',
-            fecha: 'Fecha de la fotografía'
+            fecha: 'Fecha de la fotografía',
           },
           {
-
             src: 'gallery/gallery-14.jpg',
             alt: 'Foto de la galería 14',
             description: 'Descripción de la fotografía',
-            fecha: 'Fecha de la fotografía'
+            fecha: 'Fecha de la fotografía',
           },
           {
             src: 'gallery/gallery-15.jpg',
             alt: 'Foto de la galería 15',
             description: 'Descripción de la fotografía',
-            fecha: 'Fecha de la fotografía'
+            fecha: 'Fecha de la fotografía',
           },
         ],
       },
@@ -345,14 +356,13 @@ const pageData = {
           href: './',
           image: {
             src: 'icon-arrow.svg',
-            alt: 'Icono Flecha Enviar'
+            alt: 'Icono Flecha Enviar',
           },
         },
         buttonBack: {
           text: 'Volver',
           href: '/inicio',
         },
-
       },
     ],
   },
