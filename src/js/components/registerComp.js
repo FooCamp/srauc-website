@@ -1,8 +1,7 @@
-import { newContainer, newText } from "../helpers/helpers";
+import { newContainer, newText } from '../helpers/helpers';
 
 const createInputs = (formInputs) => {
   const arrayInputs = formInputs.map((input) => {
-
     const formFieldLabel = newText('label', input.label, ['form__field-label']);
 
     const formFieldInput = document.createElement('input');
@@ -16,11 +15,9 @@ const createInputs = (formInputs) => {
   });
 
   return arrayInputs;
-
 };
 
 const registerComp = (data) => {
-
   const formHeadline = newText('h6', data.headline, ['form__headline']);
   const formSubheadline = newText('p', '', ['form__subheadline']);
   formSubheadline.innerHTML = data.subheadline;
@@ -46,14 +43,17 @@ const registerComp = (data) => {
   formButtonBack.innerText = data.buttonBack.text;
   formButtonBack.href = data.buttonBack.href;
 
-  const formWrapper = newContainer('form', [formGroupFields, formButtonIcon, formButtonBack], ['form__wrapper']);
-  formWrapper.action = " ";
+  const formWrapper = newContainer(
+    'form',
+    [formGroupFields, formButtonIcon, formButtonBack],
+    ['form__wrapper'],
+  );
+  formWrapper.action = ' ';
 
   const formContainer = newContainer('div', [formInfo, formWrapper], ['form__container', 'grid']);
   const form = newContainer('section', [formContainer], ['form']);
 
   return form;
-
 };
 
 export { registerComp };
