@@ -15,6 +15,7 @@ import { infographicSectionCan } from './components/infographicCan';
 import { infographicSectionPan } from './components/infographicPan';
 import { sliderComp } from './components/sliderComp';
 import { footerSection } from './components/footer';
+import { instructions } from './components/instructions';
 
 /**
  * Component map
@@ -29,13 +30,14 @@ const components = {
   warningComp: featuredMessageComp,
   introductionTextComp: introText,
   registerFormComp: registerComp,
+  timeline: instructions,
   percentTimelineHeader: infographicSectionHeader,
   percentTimelineItemSiphon: infographicSectionSiphon,
   percentTimelineItemCan: infographicSectionCan,
   percentTimelineItemPan: infographicSectionPan,
   slider: sliderComp,
+  galleryComp: galleryComp,
   footer: footerSection,
-  galleryComp: galleryComp
 };
 
 const getCurrentPage = () => {

@@ -43,23 +43,53 @@ const pageData = {
         title: '¿Sabías que 1 litro de aceite contamina más de 1000 litros de agua?',
       },
       {
-        component: 'timelineHeader',
+        component: 'timeline',
         title: 'Como recoger el aceite',
-      },
-      {
-        component: 'timelineItem',
-        index: 0,
-        title: 'Deja enfriar el aceite',
-        text: 'Con esto evitamos posibles quemaduras o derretir el embase.',
-        icon: '',
-      },
-      {
-        component: 'timelineItem',
-        index: 1,
-        title: 'Filtra el aceite',
-        text:
-          'Filtre o cuele el aceite para que no pasen restos de comida, y viértelo en un envase de plástico, que puede ser el mismo frasco donde viene el aceite, cierre bien con la tapa.',
-        icon: '',
+        timelineSteps: [
+          {
+            component: 'timelineItem',
+            index: 0,
+            title: 'Deja enfriar el aceite',
+            text: 'Con esto evitamos posibles quemaduras o derretir el embase.',
+            icon: '01-icono-enfriar.svg',
+            additional: {
+              type: 'image',
+              image: {
+                src: '01-foto-enfriar.png',
+                alt: 'SRAUC',
+              },
+            },
+          },
+          {
+            component: 'timelineItem',
+            index: 1,
+            title: 'Filtra el aceite',
+            text:
+              'Filtre o cuele el aceite para que no pasen restos de comida, y viértelo en un envase de plástico, que puede ser el mismo frasco donde viene el aceite, cierre bien con la tapa.',
+            icon: '02-icono-filtrar.svg',
+            additional: {
+              type: 'warning',
+              component: 'warningComp',
+              title: 'Evita mezclar el aceite usado con agua.',
+              icon: 'icono-aviso@3x.png',
+            },
+          },
+          {
+            component: 'timelineItem',
+            index: 2,
+            title: 'Trae el aceite',
+            icon: '03-icono-traer.svg',
+            additional: {
+              type: 'mapComp',
+              component: 'googleMapComp',
+              title: 'Institución Educativa República de Uruguay',
+              text1: 'Calle 91a No 70a-193 Barrio Alfonso López Medellín',
+              text2: 'Aula 2 -204 (bloque 2)',
+              text3:
+                'O deposítalo en la caneca color naranja que se encuentra al ingreso de la Institución.',
+            },
+          },
+        ],
       },
       {
         component: 'warningComp',
@@ -71,12 +101,6 @@ const pageData = {
         component: 'warningComp',
         title: 'Evita mezclar el aceite usado con agua.',
         icon: 'icono-aviso@3x.png',
-      },
-      {
-        component: 'timelineItem',
-        index: 2,
-        title: 'Trae el aceite',
-        icon: '',
       },
       {
         component: 'mapComp',
