@@ -114,25 +114,34 @@ const pageData = {
         title: 'Según nuestro estudio:',
       },
       {
-        component: 'percentTimelineItem',
+        component: 'percentTimelineItemSiphon',
         percent: '30%',
         title: 'Lo tiran por el desagüe',
         text: 'Contaminando ríos y depósitos de agua, creando focos de hongos y bacterías.',
-        image: '',
+        image: {
+          src: 'sifon.svg',
+          alt: 'sifon',
+        },
       },
       {
-        component: 'percentTimelineItem',
+        component: 'percentTimelineItemCan',
         percent: '20%',
         title: 'Lo tiran a la basura',
         text: 'Filtrándose en suelos, poniendo en riesgo la vida al rededor.',
-        image: '',
+        image: {
+          src: 'caneca.svg',
+          alt: 'caneca de basura',
+        },
       },
       {
-        component: 'percentTimelineItem',
+        component: 'percentTimelineItemPan',
         percent: '7%',
         title: 'Lo reutiliza',
         text: 'Poniendo en riesgo la salud propia.',
-        image: '',
+        image: {
+          src: 'sarten.svg',
+          alt: 'sarten',
+        },
       },
       {
         component: 'scaledText',
@@ -294,14 +303,13 @@ const pageData = {
           href: './',
           image: {
             src: 'icon-arrow.svg',
-            alt: 'Icono Flecha Enviar'
+            alt: 'Icono Flecha Enviar',
           },
         },
         buttonBack: {
           text: 'Volver',
           href: '/inicio',
         },
-
       },
     ],
   },

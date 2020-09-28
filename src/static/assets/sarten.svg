@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="496" height="424" viewBox="0 0 496 424">
+    <g fill="none" fill-rule="evenodd" transform="rotate(-28 406.259 93.854)">
+        <circle cx="298" cy="124" r="124" stroke="#474F78" stroke-width="2.4" transform="rotate(-180 298 124)"/>
+        <circle cx="298" cy="124" r="74" stroke="#474F78" transform="rotate(-180 298 124)"/>
+        <circle cx="298" cy="124" r="68" stroke="#474F78" transform="rotate(-180 298 124)"/>
+        <circle cx="298" cy="124" r="61" stroke="#474F78" transform="rotate(-180 298 124)"/>
+        <circle cx="298" cy="124" r="54" stroke="#474F78" transform="rotate(-180 298 124)"/>
+        <circle cx="298" cy="124" r="46" stroke="#474F78" transform="rotate(-180 298 124)"/>
+        <circle cx="298" cy="124" r="39" stroke="#474F78" transform="rotate(-180 298 124)"/>
+        <circle cx="297.5" cy="124.5" r="29.5" fill="#474F78" stroke="#474F78" stroke-width="2.4" transform="rotate(-180 297.5 124.5)"/>
+        <path stroke="#474F78" stroke-width="2.4" d="M155 142c-25.833-1.2-51.667-1.8-77.5-1.8-20.364 0-40.728.373-61.092 1.118-8.736.32-16.078-6.502-16.397-15.239-.007-.193-.011-.386-.011-.579 0-8.742 7.087-15.83 15.83-15.83.192 0 .385.004.578.012 20.364.745 40.728 1.118 61.092 1.118 25.833 0 51.667-.6 77.5-1.8v33z"/>
+        <rect width="124" height="15" x="9" y="118" stroke="#474F78" rx="7.5" transform="rotate(-180 71 125.5)"/>
+        <path fill="#474F78" d="M155 112H174V139H155z" transform="rotate(-180 164.5 125.5)"/>
+    </g>
+</svg>

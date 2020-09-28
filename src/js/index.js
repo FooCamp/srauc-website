@@ -8,6 +8,10 @@ import { featuredMessageComp } from './components/featuredMessage';
 import { introText } from './components/introText';
 import { pageData } from '../data/data';
 import { registerComp } from './components/registerComp';
+import { infographicSectionHeader } from './components/infographicHeader';
+import { infographicSectionSiphon } from './components/infographicSiphon';
+import { infographicSectionCan } from './components/infographicCan';
+import { infographicSectionPan } from './components/infographicPan';
 import { footerSection } from './components/footer';
 
 /**
@@ -23,6 +27,10 @@ const components = {
   warningComp: featuredMessageComp,
   introductionTextComp: introText,
   registerFormComp: registerComp,
+  percentTimelineHeader: infographicSectionHeader,
+  percentTimelineItemSiphon: infographicSectionSiphon,
+  percentTimelineItemCan: infographicSectionCan,
+  percentTimelineItemPan: infographicSectionPan,
   footer: footerSection,
 };
 
@@ -81,4 +89,3 @@ const pageInit = (data, { initalSections, finalSections }) => {
 };
 
 pageInit(pageData[getCurrentPage()], pageData.common);
-
